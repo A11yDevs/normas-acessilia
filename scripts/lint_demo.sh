@@ -17,7 +17,7 @@ DIR="${1:-./families}"
 SCHEMA="${2:-./schemas/acessilia.schema.json}"
 OUTPUT="${3:-./relatorio-conformidade.md}"
 FAMILIES=(200 300 400 500 600 700 800)
-VERSION="1.0.0"
+VERSION="1.1.0"
 DATE=$(date +%Y-%m-%d)
 
 # ─── Cores para Terminal ────────────────────────────────────────────────────

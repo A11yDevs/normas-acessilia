@@ -14,7 +14,7 @@ Conforme [ACESSILIA‑100](../../ACESSILIA-100.md) para princípios de terminolo
 | Código | Diretriz | Métrica de Avaliação | Comentário |
 |--------|----------|----------------------|------------|
 | ACL‑700‑VAL‑001 | **Fidelidade Semântica** | Percentual de correspondência com o conteúdo original ≥ 90 %. | Medida por comparação entre descrição e conteúdo fonte. |
-| ACL‑700‑VAL‑002 | **Claridade** | Pontuação em avaliação de legibilidade (Flesch-Kincaid ou equivalente para português) ≥ 80 %. | Aplicável a textos em português e inglês. |
+| ACL‑700‑VAL‑002 | **Clareza** | Pontuação em avaliação de legibilidade (Flesch-Kincaid ou equivalente para português) ≥ 80 %. | Aplicável a textos em português e inglês. |
 | ACL‑700‑VAL‑003 | **Reprodutibilidade** | Percentual de concordância entre descritores independentes ≥ 85 %. | Teste com pelo menos 2 descritores independentes. |
 | ACL‑700‑VAL‑004 | **Validação de Esquema** | 100 % dos campos obrigatórios preenchidos no metadata. | Verificação automática via linter. |
 | ACL‑700‑VAL‑005 | **Relatório de Conformidade** | 100 % dos critérios avaliados no relatório. | Geração de relatório Markdown. |
@@ -24,7 +24,7 @@ Conforme [ACESSILIA‑100](../../ACESSILIA-100.md) para princípios de terminolo
 | Métrica | Métrica de Avaliação | Critério de Aprovação | Comentário |
 |---------|----------------------|------------------------|------------|
 | **Fidelidade Semântica** | Percentual de correspondência com o conteúdo original. | ≥ 90 % de fidelidade semântica. | Medida por comparação entre descrição e conteúdo fonte. |
-| **Claridade** | Pontuação em avaliação de legibilidade (Flesch-Kincaid ou equivalente para português). | ≥ 80 % de pontuação. | Aplicável a textos em português e inglês. |
+| **Clareza** | Pontuação em avaliação de legibilidade (Flesch-Kincaid ou equivalente para português). | ≥ 80 % de pontuação. | Aplicável a textos em português e inglês. |
 | **Reprodutibilidade** | Percentual de concordância entre descritores independentes. | ≥ 85 % de concordância. | Teste com pelo menos 2 descritores independentes. |
 | **Objetividade** | Percentual de frases com verbos observáveis. | 100 % de frases objetivas. | Verificação automática via linter. |
 | **Completude** | Percentual de campos obrigatórios preenchidos no metadata. | 100 % dos campos obrigatórios. | Validação de esquema JSON. |
@@ -55,7 +55,7 @@ Conforme [ACESSILIA‑100](../../ACESSILIA-100.md) para princípios de terminolo
 | Identificador | Objetivo | Evidência Obrigatória | Importância | Ponto de Verificação |
 |---------------|-----------|------------------------|-------------|-----------------------|
 | ACL‑700‑VAL‑001 | Garantir fidelidade ≥ 90 %. | Relatório de comparação semântica entre descrição e conteúdo fonte. | Alta | Percentual de fidelidade no relatório. |
-| ACL‑700‑VAL‑002 | Garantir Claridade ≥ 80 %. | Pontuação de legibilidade (Flesch-Kincaid ou equivalente para português). | Alta | Pontuação ≥ 80 % no relatório. |
+| ACL‑700‑VAL‑002 | Garantir Clareza ≥ 80 %. | Pontuação de legibilidade (Flesch-Kincaid ou equivalente para português). | Alta | Pontuação ≥ 80 % no relatório. |
 | ACL‑700‑VAL‑003 | Garantir reprodutibilidade ≥ 85 %. | Relatório de concordância entre descritores independentes. | Alta | Percentual de concordância ≥ 85 %. |
 | ACL‑700‑VAL‑004 | Validar esquema de metadata. | Relatório de validação JSON contra `acessilia.schema.json`. | Alta | Ausência de erros de esquema. |
 | ACL‑700‑VAL‑005 | Gerar relatório de conformidade. | Arquivo Markdown com resultado `PASS`/`FAIL` para cada critério. | Média | Presença do relatório gerado pelo linter. |
@@ -68,7 +68,7 @@ Conforme [ACESSILIA‑100](../../ACESSILIA-100.md) para princípios de terminolo
 | Critério | Resultado | Observação |
 |----------|-----------|------------|
 | ACL‑700‑VAL‑001 (Fidelidade Semântica) | PASS (92%) | Acima do mínimo de 90%. |
-| ACL‑700‑VAL‑002 (Claridade) | PASS (85%) | Acima do mínimo de 80%. |
+| ACL‑700‑VAL‑002 (Clareza) | PASS (85%) | Acima do mínimo de 80%. |
 | ACL‑700‑VAL‑003 (Reprodutibilidade) | PASS (88%) | Acima do mínimo de 85%. |
 | ACL‑700‑VAL‑004 (Esquema JSON) | PASS | Todos os campos obrigatórios preenchidos. |
 | ACL‑700‑VAL‑005 (Relatório) | PASS | Relatório gerado com sucesso. |

@@ -164,8 +164,8 @@ O arquivo **`manifest.yml`** atua como catálogo de famílias e controla a ordem
 
 | Nível ACESSILIA | WCAG 2.2 | EPUB Accessibility | PDF/UA-1 | EN 301 549 | Section 508 |
 |-----------------|----------|-------------------|----------|------------|-------------|
-| **A** | Level A | WCAG Level A conformance | Seções 7.1-7.5 básicos | Cláusulas 5-6 | Seção 1194.41 |
-| **AA** | Level AA | WCAG Level AA conformance | Conformidade completa | Cláusulas 5-9 | Seção 1194.41-42 |
+| **A** | Level A | WCAG Level A conformance | Seções 7.1-7.5 básicos | Cláusulas 5-6 | E205.3–E205.4 |
+| **AA** | Level AA | WCAG Level AA conformance | Conformidade completa | Cláusulas 5-9 | E205.3–E205.4, E205.7 |
 | **AAA** | Level AAA | WCAG Level AAA conformance | Excedente | Cláusulas 5-12 | Excedente |
 
 > Implementações que não atendam integralmente ao nível declarado **NÃO DEVEM** declarar conformidade.

@@ -41,8 +41,8 @@ Conforme [ACESSILIA‑100](../../ACESSILIA-100.md) para princípios de terminolo
 
 | Nível ACESSILIA | WCAG 2.2 | EPUB Accessibility | PDF/UA-1 | EN 301 549 | Section 508 |
 |---|---|---|---|---|---|
-| **ACESSILIA‑A** | Level A | WCAG Level A conformance | §7.1–7.5 básicos | Cláusulas 5–6 | §1194.41 |
-| **ACESSILIA‑AA** | Level AA | WCAG Level AA conformance | Conformidade completa | Cláusulas 5–9 | §1194.41–42 |
+| **ACESSILIA‑A** | Level A | WCAG Level A conformance | §7.1–7.5 básicos | Cláusulas 5–6 | E205.3–E205.4 |
+| **ACESSILIA‑AA** | Level AA | WCAG Level AA conformance | Conformidade completa | Cláusulas 5–9 | E205.3–E205.4, E205.7 |
 | **ACESSILIA‑AAA** | Level AAA | WCAG Level AAA conformance | Excedente | Cláusulas 5–12 | Excedente |
 
 ### 4.4 Mapeamento Detalhado ACESSILIA → WCAG 2.2
@@ -55,8 +55,8 @@ A tabela a seguir mapeia critérios específicos do ACESSILIA com as Success Cri
 | ACL‑200‑IMG‑002 | 200 | 1.1.1 Non-text Content | A | Inferência de emoções sem evidência |
 | ACL‑200‑IMG‑003 | 200 | 3.1.5 Reading Level | AAA | Voz ativa em descrições |
 | ACL‑200‑IMG‑004 | 200 | 1.3.2 Meaningful Sequence | A | Ordem espacial consistente |
-| ACL‑200‑IMG‑005 | 200 | 1.3.5 Identify Input Purpose | AA | Privacidade de dados pessoais |
-| ACL‑200‑IMG‑006 | 200 | 2.4.6 Headings and Labels | AA | Licenciamento de imagens |
+| ACL‑200‑IMG‑005 | 200 | N/A | N/A | Privacidade de dados pessoais (requisito ACESSILIA específico, sem equivalente WCAG direto) |
+| ACL‑200‑IMG‑006 | 200 | N/A | N/A | Licenciamento de imagens (requisito ACESSILIA específico, sem equivalente WCAG direto) |
 | ACL‑200‑IMG‑007 | 200 | 1.4.3 Contrast (Minimum) | AA | Contraste de luminância |
 | ACL‑300‑GRF‑001 | 300 | 1.1.1 Non-text Content | A | Fonte de dados em gráficos |
 | ACL‑300‑GRF‑002 | 300 | 1.1.1 Non-text Content | A | Legendas de eixos e rótulos |
@@ -67,8 +67,8 @@ A tabela a seguir mapeia critérios específicos do ACESSILIA com as Success Cri
 | ACL‑400‑SCI‑002 | 400 | 2.4.4 Link Purpose (In Context) | A | Referências com DOI/URL |
 | ACL‑400‑SCI‑003 | 400 | 2.4.4 Link Purpose (In Context) | A | Acesso direto a dados |
 | ACL‑400‑SCI‑004 | 400 | 2.4.2 Page Titled | A | Rastreabilidade de publicação |
-| ACL‑500‑EDU‑001 | 500 | 2.4.2 Page Titled | A | Contexto pedagógico |
-| ACL‑500‑EDU‑002 | 500 | 3.1.5 Reading Level | AAA | Objetivos mensuráveis |
+| ACL‑500‑EDU‑001 | 500 | N/A | N/A | Contexto pedagógico (requisito ACESSILIA específico, sem equivalente WCAG direto) |
+| ACL‑500‑EDU‑002 | 500 | 3.1.5 Reading Level | AAA | Objetivos mensuráveis (alinhado com nível de leitura) |
 | ACL‑500‑EDU‑003 | 500 | 1.3.2 Meaningful Sequence | A | Progressão lógica |
 | ACL‑500‑EDU‑004 | 500 | 1.1.1 Non-text Content | A | Exemplos e contra-exemplos |
 | ACL‑600‑MDM‑001 | 600 | 1.2.1 Audio-only and Video-only | A | Descrição de narrativa |
@@ -81,11 +81,11 @@ A tabela a seguir mapeia critérios específicos do ACESSILIA com as Success Cri
 | ACL‑700‑VAL‑003 | 700 | 4.1.2 Name, Role, Value | A | Auditoria de privacidade |
 | ACL‑700‑VAL‑004 | 700 | 1.4.3 Contrast (Minimum) | AA | Teste de contraste |
 | ACL‑700‑VAL‑005 | 700 | 1.4.3 Contrast (Minimum) | AA | Conformidade de contraste |
-| ACL‑800‑PRF‑001 | 800 | N/A | N/A | Declaração de conformidade |
-| ACL‑800‑PRF‑002 | 800 | N/A | N/A | Lista de famílias |
-| ACL‑800‑PRF‑003 | 800 | N/A | N/A | Tipos MIME |
-| ACL‑800‑PRF‑004 | 800 | N/A | N/A | Metadados obrigatórios |
-| ACL‑800‑PRF‑005 | 800 | N/A | N/A | Documentação de extensões |
+| ACL‑800‑CRT‑001 | 800 | N/A | N/A | Declaração de conformidade |
+| ACL‑800‑CRT‑002 | 800 | N/A | N/A | Lista de famílias |
+| ACL‑800‑CRT‑003 | 800 | N/A | N/A | Tipos MIME |
+| ACL‑800‑CRT‑004 | 800 | N/A | N/A | Metadados obrigatórios |
+| ACL‑800‑CRT‑005 | 800 | N/A | N/A | Documentação de extensões |
 
 ### 4.5 Declaração de Conformidade
 
@@ -121,21 +121,23 @@ Cada perfil **DEVE** conter:
 | `namePt` | string | Sim | Nome do perfil em português. |
 | `description` | string | Sim | Descrição do escopo do perfil. |
 | `mediaTypes` | array | Sim | Tipos MIME aplicáveis. |
-| `requiredMetadata` | array | Sim | Campos de metadados obrigatórios. |
+| `requiredMetadata` | array | Sim | Campos de metadata obrigatórios. |
 | `families` | array | Sim | Famílias ACESSILIA aplicáveis. |
 | `conformanceLevel` | string | Sim | Nível mínimo de conformidade (A, AA, AAA). |
 | `license` | string | Sim | Identificador SPDX ou URL da licença. |
 | `criteria` | array | Não | Critérios específicos do perfil (além dos da família). |
 
-## 6. Critérios Obrigatórios (ACL‑800‑PRF‑NNN)
+## 6. Critérios Obrigatórios (ACL‑800‑CRT‑NNN)
+
+> **Nota**: Perfis usam o prefixo `ACL-800-PRF-`, enquanto critérios de validação usam `ACL-800-CRT-` para evitar colisão de identificadores.
 
 | Identificador | Objetivo | Evidência Obrigatória | Importância | Ponto de Verificação |
 |---------------|-----------|------------------------|-------------|-----------------------|
-| ACL‑800‑PRF‑001 | Declarar nível de conformidade. | Campo `conformanceLevel` no metadata com valor válido (A, AA ou AAA). | Alta | Presença do campo `conformanceLevel` com valor válido. |
-| ACL‑800‑PRF‑002 | Listar famílias aplicáveis. | Campo `families` contendo lista de famílias incluídas no perfil. | Alta | Todas as famílias referenciadas existem no manifesto. |
-| ACL‑800‑PRF‑003 | Definir tipos MIME. | Campo `mediaTypes` com pelo menos 1 tipo MIME válido. | Média | Formato MIME válido em todas as entradas. |
-| ACL‑800‑PRF‑004 | Especificar metadados obrigatórios. | Campo `requiredMetadata` com lista de campos exigidos. | Média | Campos listados são válidos conforme schema. |
-| ACL‑800‑PRF‑005 | Documentar extensões. | Quando o perfil adicionar critérios além das famílias, estes **DEVEM** ser documentados com identificador `ACL-800-PRF-XXX-NNN`. | Alta | Todos os critérios de extensão possuem identificador, evidência e ponto de verificação. |
+| ACL‑800‑CRT‑001 | Declarar nível de conformidade. | Campo `conformanceLevel` no metadata com valor válido (A, AA ou AAA). | Alta | Presença do campo `conformanceLevel` com valor válido. |
+| ACL‑800‑CRT‑002 | Listar famílias aplicáveis. | Campo `families` contendo lista de famílias incluídas no perfil. | Alta | Todas as famílias referenciadas existem no manifesto. |
+| ACL‑800‑CRT‑003 | Definir tipos MIME. | Campo `mediaTypes` com pelo menos 1 tipo MIME válido. | Média | Formato MIME válido em todas as entradas. |
+| ACL‑800‑CRT‑004 | Especificar metadata obrigatórios. | Campo `requiredMetadata` com lista de campos exigidos. | Média | Campos listados são válidos conforme schema. |
+| ACL‑800‑CRT‑005 | Documentar extensões. | Quando o perfil adicionar critérios além das famílias, estes **DEVEM** ser documentados com identificador `ACL-800-PRF-XXX-NNN`. | Alta | Todos os critérios de extensão possuem identificador, evidência e ponto de verificação. |
 
 ## 7. Metadados de Exemplo (JSON)
 
@@ -298,8 +300,8 @@ Cada perfil **DEVE** conter:
 | Exemplo | Justificativa |
 |---------|-----------|
 | **Conforme** – Implementação declarando `conformanceLevel: "AA"` e atendendo a todos os critérios obrigatórios e de alta importância das famílias 200–600. | Declaração válida com conformidade verificável. |
-| **Não conforme** – Implementação declarando `conformanceLevel: "AAA"` mas sem documentar critérios de extensão. `[viola ACL‑800‑PRF‑005]` | Nível declarado sem suporte documentado. |
-| **Não conforme** – Implementação declarando `conformanceLevel: "AA"` mas sem campo `conformanceLevel` no metadata. `[viola ACL‑800‑PRF‑001]` | Falta declaração obrigatória. |
+| **Não conforme** – Implementação declarando `conformanceLevel: "AAA"` mas sem documentar critérios de extensão. `[viola ACL‑800‑CRT‑005]` | Nível declarado sem suporte documentado. |
+| **Não conforme** – Implementação declarando `conformanceLevel: "AA"` mas sem campo `conformanceLevel` no metadata. `[viola ACL‑800‑CRT‑001]` | Falta declaração obrigatória. |
 
 ## 9. Estratégia de Validação
 
@@ -317,7 +319,7 @@ acessilia-lint \
   --output relatorio-familia800.md
 ```
 
-O relatório gerado **DEVE** indicar `PASS` ou `FAIL` para cada critério listado na Seção 6.
+O relatório gerado **DEVE** indicar `PASS` ou `FAIL` para cada critério listado na Seção 6 (prefixo `ACL‑800‑CRT‑`).
 
 ## 11. Limitações e Exclusões
 

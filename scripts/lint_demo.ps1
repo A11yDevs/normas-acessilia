@@ -11,7 +11,7 @@ param(
 )
 
 $Families = @(200, 300, 400, 500, 600, 700, 800)
-$Version = "1.0.0"
+$Version = "1.1.0"
 $Date = Get-Date -Format "yyyy-MM-dd"
 $Timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
 

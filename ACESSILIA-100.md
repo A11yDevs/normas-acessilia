@@ -27,7 +27,7 @@
 |-----------|----------------------|-----------|
 | Neutralidade | DEVE | A descrição **NÃO DEVE** expressar opinião ou preferência pessoal. |
 | Fidelidade | DEVE | A descrição **DEVE** corresponder fielmente ao conteúdo observado. |
-| Claridade | DEVE | A linguagem **DEVE** ser compreensível pelo público-alvo. |
+| **Clareza** | DEVE | A linguagem **DEVE** ser compreensível pelo público-alvo. |
 | Consistência | DEVE | Termos e estrutura **DEVEM** ser uniformes em todas as famílias. |
 | Reprodutibilidade | DEVE | Resultados equivalentes **DEVEM** ser obtidos por descritores independentes. |
 
@@ -72,7 +72,7 @@ Os identificadores seguem o padrão `ACL‑<FAMÍLIA>-<TIPO>-<NÚMERO>`. Exemplo
 | 500 | `ACL‑500‑EDU‑NNN` | `ACL‑500‑EDU‑001` |
 | 600 | `ACL‑600‑MDM‑NNN` | `ACL‑600‑MDM‑001` |
 | 700 | `ACL‑700‑VAL‑NNN` | `ACL‑700‑VAL‑001` |
-| 800 | `ACL‑800‑PRF‑NNN` | `ACL‑800‑PRF‑001` |
+| 800 | `ACL‑800‑PRF‑NNN` (perfis) / `ACL‑800‑CRT‑NNN` (critérios) | `ACL‑800‑PRF‑001`, `ACL‑800‑CRT‑001` |
 | 100 | `ACL‑100‑T‑NNN` | `ACL‑100‑T001` |
 
 Estes IDs são **fixos** e não mudam entre versões.
@@ -101,13 +101,13 @@ Estes IDs são **fixos** e não mudam entre versões.
 | **Evidência Obrigatória** | Dado que **DEVE** estar presente para que o critério seja atendido. |
 | **Ponto de Verificação** | Local ou método pelo qual se verifica a conformidade de um critério. |
 | **Importância** | Nível de prioridade de um critério (Alta ou Média). |
-| **Esquema** | Arquivo JSON ou XSD que define a estrutura obrigatória dos metadados. |
+| **Esquema** | Arquivo JSON ou XSD que define a estrutura obrigatória dos metadata. |
 | **Manifesto** | Arquivo `manifest.yml` que lista famílias, ordem de importação e versão. |
 | **Módulo** | Arquivo individual de uma família que pode ser incluído em contexto de uso. |
 | **Rastreabilidade** | Capacidade de rastrear cada critério por seu identificador permanente. |
 | **Conformidade** | Estado de atendimento a todos os critérios obrigatórios aplicáveis. |
 | **Relatório de Conformidade** | Documento gerado pelo linter com resultado PASS/FAIL por critério. |
-| **Validação** | Processo de verificar se conteúdo e metadados atendem aos requisitos. |
+| **Validação** | Processo de verificar se conteúdo e metadata atendem aos requisitos. |
 | **Auditoria** | Revisão humana independente para validar conformidade além da validação automática. |
 | **Perfil** | Conjunto de critérios e requisitos específicos para um tipo de conteúdo ou cenário de uso, podendo restringir ou expandir os requisitos das famílias base. |
 | **Extensão** | Mecanismo pelo qual novos perfis adicionam critérios além das famílias base, mediante documentação e revisão pelo comitê técnico. |
@@ -125,7 +125,7 @@ Estes IDs são **fixos** e não mudam entre versões.
 | **Flesch-Kincaid** | Fórmula de legibilidade que mede a compreensibilidade de textos (Flesch, 1949). Para português: índice equivalente adaptado por Costa (1998). |
 | **Legenda (Gráfico)** | Texto que descreve eixos, unidades e elementos de um gráfico ou diagrama. |
 | **Legenda (Vídeo)** | Texto sincronizado com o áudio que transcreve falas e sons relevantes em conteúdo multimídia (captions). |
-| **Índice de Gunning** | Fórmula alternativa de legibilidade que mede a compreensibilidade de textos; alternativa ao Flesch-Kincaid para validação de Claridade. |
+| **Índice de Gunning** | Fórmula alternativa de legibilidade que mede a compreensibilidade de textos; alternativa ao Flesch-Kincaid para validação de Clareza. |
 
 ### 6.4 Termos Gerais
 
@@ -139,4 +139,4 @@ Estes IDs são **fixos** e não mudam entre versões.
 
 ### 6.5 Convenção de Nomenclatura
 
-> **Convenção de Nomenclatura**: Campos de metadados JSON utilizam nomenclatura em inglês (`description`, `license`, `imageType`, etc.) independentemente do idioma da documentação do padrão.
+> **Convenção de Nomenclatura**: Campos de metadata JSON utilizam nomenclatura em inglês (`description`, `license`, `imageType`, etc.) independentemente do idioma da documentação do padrão.

@@ -16,7 +16,7 @@ Conforme [ACESSILIA‑100](../../ACESSILIA-100.md) para princípios de terminolo
 | ACL‑600‑MDM‑001 | **Narração** | 100 % do conteúdo multimídia **DEVE** ter descrição textual da narrativa. | A descrição **DEVE** acompanhar a progressão temporal do conteúdo. |
 | ACL‑600‑MDM‑002 | **Legendas** | 100 % dos conteúdos com áudio **DEVEM** incluir legendas sincronizadas. | Legendas **DEVEM** seguir padrão WebVTT ou SRT. |
 | ACL‑600‑MDM‑003 | **Áudio Descritivo** | Quando houver elementos visuais sem narração, áudio descritivo **DEVE** ser fornecido. | Campo `audioDescription` no metadata. |
-| ACL‑600‑MDM‑004 | **Controle Temporal** | 100 % dos marcadores temporais **DEVEM** usar formato ISO 8601. | Formato `HH:MM:SS.mmm`. |
+| ACL‑600‑MDM‑004 | **Controle Temporal** | 100 % dos marcadores temporais **DEVEM** usar formato ISO 8601 de duração. | Formato `PnYnMnDTnHnMnS` (ex.: `PT12M30S` para 12 minutos e 30 segundos). |
 | ACL‑600‑MDM‑005 | **Transcrição** | Conteúdos com fala **DEVEM** fornecer transcrição completa. | Campo `transcript` com texto integral. |
 
 ## 4. Critérios Obrigatórios (ACL‑600‑MDM‑NNN)
