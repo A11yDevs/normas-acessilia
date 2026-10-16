@@ -368,6 +368,20 @@ sequenceDiagram
     Report-->>Dev: Relatório de Integridade (79/79 PASS)
 ```
 
+<details>
+<summary><strong>Descrição Textual Alternativa do Diagrama de Sequência do Linter</strong></summary>
+
+> **Fluxo de Auditoria e Validação (Etapas 1 a 7)**:
+> 1. O **Adaptador ou Desenvolvedor** aciona a execução do linter (`lint_demo.ps1` ou `lint_demo.sh`);
+> 2. O **Linter** realiza varredura interna das seções mandatórias nos arquivos Markdown (Escopo, Diretrizes, Critérios);
+> 3. O **Linter** extrai e totaliza os identificadores únicos de conformidade (`ACL-*`);
+> 4. O **Linter** submete os blocos de metadados JSON ao validador formal **JSON Schema** (`acessilia.schema.json`);
+> 5. O **Linter** checa a conformidade das palavras-chave normativas conforme RFC 2119/8174 (`DEVE`, `RECOMENDA-SE`, etc.);
+> 6. O **Linter** consolida os resultados e compila o documento `relatorio-conformidade.md` reportando status `PASS`, `FAIL` ou `WARN`;
+> 7. O **Relatório de Conformidade** retorna ao desenvolvedor atestando 100% de integridade técnica (79/79 checks aprovados).
+
+</details>
+
 Atualmente, o repositório mantém **100% de aprovação (79 checks PASS)** em todas as suas 7 famílias operacionais.
 
 ### 6.2 O Esquema JSON Schema (`schemas/acessilia.schema.json`)
