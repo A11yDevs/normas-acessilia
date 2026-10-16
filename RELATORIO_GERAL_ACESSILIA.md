@@ -7,6 +7,13 @@
 > **Comitê Responsável**: Equipe Técnica e Editorial ACESSILIA ([A11yDevs](https://github.com/A11yDevs/normas-acessilia))  
 > **Harmonização Normativa**: RFC 2119/8174, WCAG 2.2, ABNT NBR 17225:2025, ISO 14289 (PDF/UA), ISO/IEC 23761 (EPUB), ANSI/NISO Z39.86 (DAISY) e Manual REBECA 2025.
 
+> [!IMPORTANT]
+> **Aviso Importante sobre a Natureza deste Documento**:  
+> Este **não é um relatório final ou definitivo**; trata-se de um documento de trabalho dinâmico que **ainda pode sofrer alterações, complementações e refinamentos contínuos**.  
+> O seu objetivo é servir como um **relatório consolidado geral** que organiza e resume os conceitos do padrão em linguagem acessível e didática para proporcionar uma **fácil compreensão** por parte de qualquer leitor, educador, gestor ou profissional.  
+> As especificações técnicas integrais, os esquemas JSON de validação, os perfis formais de conformidade, os critérios normativos detalhados e as suítes de testes estão em constante evolução e desenvolvimento no **repositório oficial de pesquisa e estruturação do Padrão ACESSILIA de Qualidade e Conformidade**:  
+> 👉 **Repositório Oficial**: [https://github.com/A11yDevs/normas-acessilia](https://github.com/A11yDevs/normas-acessilia)
+
 ---
 
 ## Sumário Executivo
