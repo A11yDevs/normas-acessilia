@@ -1,3 +1,14 @@
+<div align="center">
+  <img src="assets/logo.png" alt="Logotipo com o nome &quot;acessilia&quot; em destaque na parte superior. Acima do nome, um círculo em tons de azul mistura duas imagens: à esquerda, um documento com bordas arredondadas contendo um ícone de foto no topo e uma grade tipo planilha na parte inferior; à direita, o perfil de uma cabeça humana voltado para a direita, também em azul. Três linhas curvas saem da região da boca, sugerindo fala ou som. À esquerda do documento, fileiras de pequenos pontos circulares em degradê de azul dão sensação de movimento ou textura digital. Abaixo do símbolo está a palavra &quot;acessilia&quot;: &quot;acess&quot; em azul escuro e &quot;ilia&quot; em verde-água. Sob o nome, uma linha fina azul com um ponto em cada ponta. Mais abaixo, o texto &quot;TRANSFORMANDO DOCUMENTOS. GERANDO ACESSIBILIDADE.&quot; No rodapé aparecem quatro ícones em azul escuro, separados por pequenos traços: um quadrado com seis pontos em relevo (símbolo que lembra braille), um alto-falante, um olho estilizado e um retângulo que representa um documento ou página." width="220" />
+</div>
+
+<details>
+<summary><strong>Audiodescrição / Texto Alternativo da Logomarca ACESSILIA</strong></summary>
+
+> *Logotipo com o nome "acessilia" em destaque na parte superior. Acima do nome, um círculo em tons de azul mistura duas imagens: à esquerda, um documento com bordas arredondadas contendo um ícone de foto no topo e uma grade tipo planilha na parte inferior; à direita, o perfil de uma cabeça humana voltado para a direita, também em azul. Três linhas curvas saem da região da boca, sugerindo fala ou som. À esquerda do documento, fileiras de pequenos pontos circulares em degradê de azul dão sensação de movimento ou textura digital. Abaixo do símbolo está a palavra "acessilia": "acess" em azul escuro e "ilia" em verde-água. Sob o nome, uma linha fina azul com um ponto em cada ponta. Mais abaixo, o texto "TRANSFORMANDO DOCUMENTOS. GERANDO ACESSIBILIDADE." No rodapé aparecem quatro ícones em azul escuro, separados por pequenos traços: um quadrado com seis pontos em relevo (símbolo que lembra braille), um alto-falante, um olho estilizado e um retângulo que representa um documento ou página.*
+
+</details>
+
 # Relatório Técnico Geral: Padrão Normativo ACESSILIA
 ## Sistema Brasileiro de Normas de Acessibilidade Digital e Descrição Semântica
 
