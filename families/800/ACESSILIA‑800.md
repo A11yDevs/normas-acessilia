@@ -110,6 +110,9 @@ Um perfil de acessibilidade é um conjunto de critérios e requisitos específic
 | **Captura de Tela** | `ACL-800-PRF-005` | 200 | Requisitos para descrição de interfaces e capturas de tela. |
 | **Conteúdo STEM** | `ACL-800-PRF-006` | 300, 400, 500 | Requisitos para ciência, tecnologia, engenharia e matemática. |
 | **Documento Acadêmico (REBECA)** | `ACL-800-PRF-007` | 200, 300, 400, 500 | Requisitos do Manual REBECA para adaptação de livros e artigos acadêmicos digitais acessíveis (ABNT, Lei 9.610/98, ADD e delimitação de descrição). |
+| **Documento PDF/UA (ISO 14289)** | `ACL-800-PRF-008` | 200, 300, 400, 500, 700 | Requisitos estritos de acessibilidade universal para PDFs com tags semânticas, linearização e metadados XMP. |
+| **Publicação EPUB Acessível (ISO/IEC 23761)** | `ACL-800-PRF-009` | 200, 300, 400, 500, 700 | Requisitos para EPUB 3 conforme W3C EPUB Accessibility 1.1 e metadados schema.org/accessibility. |
+| **Áudio Digital e Texto Sincronizado (DAISY / MECDAISY)** | `ACL-800-PRF-010` | 500, 600, 700 | Requisitos para livros falados e multimídia com sincronização temporal SMIL (ANSI/NISO Z39.86 e MECDAISY). |
 
 ### 5.3 Estrutura de um Perfil
 
@@ -339,6 +342,88 @@ Cada perfil **DEVE** conter:
       "requirement": "O arquivo DEVE seguir o padrão: [SOBRENOME]_[PrimeiraPalavraTitulo]_[RADICAL] (ex.: SILVA_Historia_LIVR)."
     }
   ]
+}
+```
+
+### 7.8 Exemplo de Perfil — Documento PDF/UA (ISO 14289)
+
+```json
+{
+  "id": "ACL-800-PRF-008",
+  "name": "Accessibility Profile - PDF/UA Universal Accessibility (ISO 14289)",
+  "namePt": "Perfil de Acessibilidade - Documento PDF/UA (ISO 14289)",
+  "description": "Requisitos de acessibilidade universal para documentos PDF taggeados, linearizados e conformes com ISO 14289-1 e ISO 14289-2.",
+  "mediaTypes": [
+    "application/pdf"
+  ],
+  "requiredMetadata": [
+    "title",
+    "description",
+    "language",
+    "conformsTo",
+    "accessMode",
+    "accessibilityFeature",
+    "accessibilitySummary"
+  ],
+  "families": [200, 300, 400, 500, 700],
+  "conformanceLevel": "AA",
+  "license": "https://creativecommons.org/licenses/by/4.0/"
+}
+```
+
+### 7.9 Exemplo de Perfil — Publicação EPUB Acessível (ISO/IEC 23761)
+
+```json
+{
+  "id": "ACL-800-PRF-009",
+  "name": "Accessibility Profile - Accessible EPUB Publication (ISO/IEC 23761)",
+  "namePt": "Perfil de Acessibilidade - Publicação EPUB Acessível (ISO/IEC 23761)",
+  "description": "Requisitos para publicações digitais EPUB 3 em conformidade com a especificação W3C EPUB Accessibility 1.1 e ISO/IEC 23761.",
+  "mediaTypes": [
+    "application/epub+zip"
+  ],
+  "requiredMetadata": [
+    "title",
+    "description",
+    "language",
+    "conformsTo",
+    "accessMode",
+    "accessModeSufficient",
+    "accessibilityFeature",
+    "accessibilityHazard",
+    "accessibilitySummary"
+  ],
+  "families": [200, 300, 400, 500, 700],
+  "conformanceLevel": "AA",
+  "license": "https://creativecommons.org/licenses/by/4.0/"
+}
+```
+
+### 7.10 Exemplo de Perfil — Áudio Digital e Texto Sincronizado (DAISY / MECDAISY)
+
+```json
+{
+  "id": "ACL-800-PRF-010",
+  "name": "Accessibility Profile - Synchronized Digital Audio and Text (DAISY / MECDAISY)",
+  "namePt": "Perfil de Acessibilidade - Áudio Digital e Texto Sincronizado (DAISY / MECDAISY)",
+  "description": "Requisitos para livros falados e materiais educacionais com sincronização temporal multimodal SMIL (ANSI/NISO Z39.86 e MECDAISY).",
+  "mediaTypes": [
+    "application/x-dtbook+xml",
+    "audio/mpeg",
+    "application/smil+xml"
+  ],
+  "requiredMetadata": [
+    "title",
+    "description",
+    "language",
+    "duration",
+    "mediaType",
+    "transcript",
+    "audioDescription"
+  ],
+  "families": [500, 600, 700],
+  "conformanceLevel": "AA",
+  "license": "https://creativecommons.org/licenses/by/4.0/"
 }
 ```
 

@@ -1,4 +1,4 @@
-# ACESSILIA — Sistema Brasileiro de Normas para Descrição Semântica
+# ACESSILIA — Sistema Brasileiro de Normas de Acessibilidade Digital e Descrição Semântica
 
 > **Versão**: 1.1.0 · **Data**: 2026-07-16  
 > **RFC 2119/8174**: Os termos **DEVE**, **NÃO DEVE**, **PODE** e **RECOMENDA-SE** seguem [RFC 2119](https://tools.ietf.org/html/rfc2119) e [RFC 8174](https://tools.ietf.org/html/rfc8174).
@@ -27,16 +27,21 @@
 
 ## 1. O Que é ACESSILIA
 
-**ACESSILIA** (*Sistema Brasileiro de Normas para Descrição Semântica*) é um padrão técnico brasileiro que define regras para a elaboração de descrições semânticas acessíveis de conteúdos visuais, gráficos, científicos, educacionais e multimídia.
+**ACESSILIA** (*Sistema Brasileiro de Normas de Acessibilidade Digital e Descrição Semântica*) é um padrão técnico brasileiro que estabelece especificações técnicas, perfis de conformidade e boas práticas para conteúdos, documentos e formatos digitais acessíveis (incluindo **PDF/UA**, **EPUB 3**, **DAISY/MECDAISY**, normas **ISO** e **ABNT**).
+
+O padrão integra duas dimensões fundamentais da acessibilidade digital:
+1. **Semântica do Conteúdo**: regras rigorosas para elaboração de descrições semânticas objetivas de imagens, gráficos, dados estatísticos, fórmulas científicas, materiais didáticos e mídias audiovisuais.
+2. **Estrutura e Formato de Documentos**: diretrizes arquiteturais para que arquivos e publicações digitais preservem marcação de acessibilidade, hierarquia de títulos, ordem lógica de leitura, tabelas semânticas e metadados de conformidade.
 
 O padrão fornece:
 
-- **Descrições objetivas**: texto que relata apenas o que é observável diretamente no conteúdo.
-- **Metadata estruturados**: dados em JSON/XML que acompanham a descrição textual.
-- **Validação automatizada**: linter que verifica conformidade com o esquema e regras.
-- **Auditoria**: procedimentos de revisão humana para garantir qualidade.
+- **Descrições objetivas**: texto semântico que relata o conteúdo de forma verificável e contextualizada.
+- **Perfis para formatos digitais**: especificações para conformidade com **PDF/UA-1/2 (ISO 14289)**, **EPUB Accessibility (ISO/IEC 23761)**, **DAISY 3** e documentos acadêmicos (**Manual REBECA / ABNT**).
+- **Metadata estruturados**: dados em JSON/XML que acompanham descrições e declarações de conformidade de documentos.
+- **Validação automatizada**: linter que verifica conformidade com schemas, regras e perfis.
+- **Auditoria**: procedimentos de revisão humana e critérios de amparo legal (ex.: Lei nº 9.610/1998, Art. 46).
 
-> O objetivo do ACESSILIA é assegurar que descrições semânticas sejam objetivas, reprodutíveis, verificáveis, consistentes e livres de vieses, sendo compatíveis tanto com revisão humana quanto automatizada.
+> O objetivo do ACESSILIA é assegurar que conteúdos e documentos digitais sejam universalmente acessíveis, objetivos, reproduzíveis, verificáveis e tecnologicamente interoperáveis com sintetizadores e tecnologias assistivas.
 
 ---
 
@@ -309,18 +314,22 @@ O relatório gerado **DEVE** seguir o formato:
 
 ## 10. Conformidade com Padrões Externos
 
-| Padrão | Escopo | Família(s) Aplicável(is) |
-|--------|--------|--------------------------|
-| [WCAG 2.2](https://www.w3.org/TR/WCAG22/) | Acessibilidade de conteúdo Web (W3C) | 200, 300, 400, 500, 600 |
-| [WAI-ARIA 1.2](https://www.w3.org/TR/wai-aria-1.2/) | Aplicações ricas e semântica de acessibilidade web | 200, 300, 600 |
-| [HTML-AAM / Core-AAM](https://www.w3.org/TR/html-aam-1.0/) | Mapeamento de elementos e acessibilidade de browsers | 200, 300 |
-| [EPUB 3](https://www.w3.org/TR/epub-33/) / [EPUB Accessibility 1.1](https://www.w3.org/TR/epub-a11y-11/) | Publicações e livros digitais acessíveis | 200, 300, 400, 500, 800 |
-| [PDF/UA-1 (ISO 14289)](https://www.iso.org/standard/64599.html) | Documentos PDF universalmente acessíveis | 200, 300, 400, 500, 800 |
+| Padrão / Norma | Escopo Técnico | Família(s) Aplicável(is) |
+|-----------------|----------------|--------------------------|
+| [WCAG 2.2](https://www.w3.org/TR/WCAG22/) / [ISO/IEC 40500](https://www.iso.org/standard/57363.html) | Diretrizes de Acessibilidade para Conteúdo Web (W3C / ISO) | 200, 300, 400, 500, 600, 700 |
+| [WAI-ARIA 1.2](https://www.w3.org/TR/wai-aria-1.2/) | Semântica estrutural e acessibilidade para aplicações interativas | 200, 300, 600 |
+| [HTML-AAM / Core-AAM](https://www.w3.org/TR/html-aam-1.0/) | Mapeamento de elementos e acessibilidade de navegadores | 200, 300 |
+| [PDF/UA-1 (ISO 14289-1)](https://www.iso.org/standard/64599.html) / [PDF/UA-2 (ISO 14289-2)](https://www.iso.org/standard/82216.html) | Universal Accessibility em formato PDF (estrutura, tags e leitura linear) | 200, 300, 400, 500, 800 |
+| [EPUB 3.3](https://www.w3.org/TR/epub-33/) / [EPUB Accessibility 1.1 (ISO/IEC 23761)](https://www.iso.org/standard/84542.html) | Publicações e livros digitais estruturados e acessíveis | 200, 300, 400, 500, 800 |
+| [DAISY 3 (ANSI/NISO Z39.86)](https://daisy.org/activities/standards/daisy/daisy-3/) / [MECDAISY (Nota Técnica nº 21/MEC)](http://portal.mec.gov.br/) | Áudio digital sincronizado e publicações multimídia estruturadas | 600, 800 |
+| [ISO 9241-171](https://www.iso.org/standard/39080.html) | Ergonomia da interação humano-sistema — Acessibilidade de software e documentos | 200, 300, 700 |
+| [ISO/IEC Guide 71](https://www.iso.org/standard/57385.html) / [ABNT ISO/IEC Guia 71](https://www.abntcatalogo.com.br/) | Guia para integração de acessibilidade em normas e projetos | 100, 700, 800 |
+| [ABNT NBR 17060:2022](https://www.abntcatalogo.com.br/) | Acessibilidade em aplicações móveis e interfaces digitais | 200, 300, 600 |
+| [ABNT NBR 14724 / 10520 / 6027](https://www.abntcatalogo.com.br/) | Trabalhos acadêmicos, citações em bloco e estruturação de sumários | 400, 500, 800 |
+| [Manual REBECA 2025](https://repositorio.unb.br/bitstream/10482/52961/1/REBECA_ManualPadronizacao.pdf) | Padronização documental universitária e audiodescrição didática (ADD) | 100, 400, 500, 600, 800 |
 | [EN 301 549 v3.2.1](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf) | Requisitos europeus de TIC acessível | Todas |
 | [Section 508](https://www.section508.gov/) | Requisitos de acessibilidade governamental (EUA) | Todas |
-| [ISO 9241-171](https://www.iso.org/standard/39080.html) | Ergonomia da interação humano-sistema e acessibilidade de software | 200, 300, 700 |
-| [DAISY 3 / Knowledge Base](https://daisy.org/) | Publicações de áudio digital e texto sincronizado | 600, 800 |
-| [ADLAB PRO](https://www.adlabproject.eu/) | Diretrizes europeias de audiodescrição | 600 |
+| [ADLAB PRO](https://www.adlabproject.eu/) | Diretrizes de formação e prática de audiodescrição | 600 |
 
 ---
 
