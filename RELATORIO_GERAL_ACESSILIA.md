@@ -58,7 +58,13 @@
    - 6.2 O Esquema JSON Schema (`schemas/acessilia.schema.json`)
    - 6.3 O Papel da Revisão Humana
 7. [Matriz de Correspondência com Normas Nacionais e Internacionais](#7-matriz-de-correspondência-com-normas-nacionais-e-internacionais)
-8. [Considerações Finais e Próximos Passos](#8-considerações-finais-e-próximos-passos)
+8. [Marco Jurídico e Políticas Públicas de Acessibilidade](#8-marco-jurídico-e-políticas-públicas-de-acessibilidade)
+   - 8.1 Lei Brasileira de Inclusão (LBI nº 13.146/2015 — Art. 63 e Art. 68)
+   - 8.2 Lei de Direitos Autorais (Lei nº 9.610/1998 — Art. 46) e o Manual REBECA
+   - 8.3 Decreto Federal nº 5.296/2004 e o Modelo de Acessibilidade em Governo Eletrônico (e-MAG)
+   - 8.4 Tratado de Marraquexe (Decreto Presidencial nº 9.522/2018)
+9. [Glossário Terminológico e Léxico Técnico Acessível](#9-glossário-terminológico-e-léxico-técnico-acessível)
+10. [Considerações Finais e Próximos Passos](#10-considerações-finais-e-próximos-passos)
 
 ---
 
@@ -393,7 +399,83 @@ Esta tabela consolida como o ACESSILIA atua como uma ponte integradora entre os 
 
 ---
 
-## 8. Considerações Finais e Próximos Passos
+---
+
+## 8. Marco Jurídico e Políticas Públicas de Acessibilidade
+
+O padrão **ACESSILIA** não opera em um vácuo teórico; ele fundamenta-se e dá suporte direto ao cumprimento das principais legislações, decretos federais e tratados internacionais de direitos humanos vigentes no Brasil. Compreender essa ancoragem jurídica é vital para gestores públicos, instituições educacionais, editoras e empresas de tecnologia.
+
+### 8.1 Lei Brasileira de Inclusão da Pessoa com Deficiência (LBI — Lei nº 13.146/2015)
+
+A LBI institui o Estatuto da Pessoa com Deficiência e estabelece a acessibilidade como direito fundamental indisponível:
+- **Artigo 63 (Acessibilidade Digital Obrigatória)**: Determina que é obrigatória a acessibilidade nos sítios da internet mantidos por empresas com sede ou representação comercial no país ou por órgãos de governo, para uso da pessoa com deficiência, garantindo-lhe acesso às informações disponíveis, conforme as melhores práticas e diretrizes de acessibilidade adotadas internacionalmente (harmonizadas no Brasil pela ABNT NBR 17225:2025 e WCAG 2.2).
+- **Artigo 68 (Livros e Materiais Didáticos em Formatos Acessíveis)**: Estabelece que o poder público deve adotar mecanismos de incentivo à produção, à edição, à difusão e à distribuição de livros em formatos acessíveis, inclusive em publicações digitais, para pessoas com deficiência. Assegura também que as editoras são obrigadas a disponibilizar, sob demanda, exemplares em formato acessível. O ACESSILIA-800 e a adoção do EPUB 3 com metadados de acessibilidade fornecem o instrumental técnico para cumprir o Art. 68 de forma padronizada.
+
+### 8.2 Lei de Direitos Autorais (Lei Federal nº 9.610/1998, Art. 46) e o Manual REBECA
+
+Uma das grandes barreiras históricas à adaptação de livros e artigos científicos para pessoas com deficiência era o receio infundado de infração de propriedade intelectual. O ordenamento jurídico brasileiro sana expressamente essa questão:
+- **Artigo 46, Inciso I, Alínea 'd'**: Define que **não constitui ofensa aos direitos autorais** a reprodução de obras literárias, artísticas ou científicas, para uso exclusivo de pessoas com deficiência visual ou outra incapacidade que impeça a leitura de texto convencional, desde que a reprodução seja feita **sem fins comerciais** e na medida estritamente necessária para suprir a necessidade do usuário.
+- **Conexão com o Manual REBECA 2025**: É exatamente sobre essa base legal que os Núcleos de Acessibilidade das Universidades Federais (UnB, UFRN, UFC) e o Padrão ACESSILIA estruturam a adaptação documental acadêmica. Toda obra adaptada sob as normas REBECA/ACESSILIA deve conter a nota legal explícita citando o Art. 46 da Lei 9.610/1998, assegurando a proteção ao direito à educação inclusiva e a integridade autoral.
+
+### 8.3 Decreto Federal nº 5.296/2004 e o Modelo de Acessibilidade em Governo Eletrônico (e-MAG)
+
+- **Decreto Presidencial nº 5.296/2004**: Regulamenta as Leis nº 10.048/2000 e nº 10.098/2000, tornando mandatória a eliminação de barreiras arquitetônicas, de comunicação e digitais na administração pública direta, indireta e nos serviços de utilidade pública.
+- **e-MAG (Modelo de Acessibilidade em Governo Eletrônico)**: Desenvolvido pelo Governo Federal brasileiro, o e-MAG padronizou o processo de desenvolvimento e adaptação de conteúdos digitais do governo federal, alinhando-se aos princípios internacionais de percepção, operabilidade, compreensibilidade e robustez. As famílias ACESSILIA 200 a 700 expandem os preceitos do e-MAG ao fornecerem métricas quantitativas e regras semânticas granulares para elementos não contemplados em detalhes pelo e-MAG clássico (como audiodescrição pedagógica e notações científicas).
+
+### 8.4 Tratado de Marraquexe (Decreto Presidencial nº 9.522/2018)
+
+- **Natureza Constitucional**: O Tratado de Marraquexe para Facilitar o Acesso a Obras Publicadas às Pessoas Cegas, com Deficiência Visual ou com Outras Dificuldades para Ter Acesso ao Texto Impresso foi promulgado no Brasil pelo **Decreto Federal nº 9.522/2018** com equivalência de emenda constitucional, nos termos do § 3º do Art. 5º da Constituição Federal de 1988.
+- **Intercâmbio Transfronteiriço de Obras Acessíveis**: O tratado permite que "entidades autorizadas" (como bibliotecas, universidades e centros de acessibilidade) produzam e distribuam exemplares em formatos acessíveis (como DAISY, EPUB 3 e PDF/UA) e realizem o intercâmbio dessas obras entre os países signatários sem a exigência de licenciamento comercial prévio. O ACESSILIA provê o controle de qualidade semântica exigido para que os documentos brasileiros atendam com excelência aos requisitos técnicos globais do Tratado de Marraquexe.
+
+---
+
+## 9. Glossário Terminológico e Léxico Técnico Acessível
+
+Este glossário unificado reúne, define e contextualiza os principais termos técnicos, conceitos normativos e siglas utilizados no ecossistema do Padrão ACESSILIA:
+
+1. **Altura-x da Tipografia (x-height)**:  
+   *Definição*: Em tipografia e design editorial, refere-se à altura das letras minúsculas que não possuem hastes ascendentes nem descendentes (como as letras 'x', 'a', 'c', 'e', 'o').  
+   *Importância na Acessibilidade*: Fontes com altura-x generosa (como Atkinson Hyperlegible, Verdana e Tiresias) são significativamente mais legíveis para pessoas com baixa visão, dislexia ou dificuldades de processamento visual, pois diferenciam nitidamente caracteres similares (ex: 'b', 'd', 'p', 'q', 'h', 'l').
+
+2. **Árvore de Tags (Tag Tree / Logical Structure)**:  
+   *Definição*: Estrutura hierárquica invisível embutida no código de documentos digitais (especialmente PDF e EPUB) que categoriza cada elemento visual em marcadores semânticos (como `<H1>`, `<P>`, `<Table>`, `<Figure>`, `<Formula>`).  
+   *Importância na Acessibilidade*: Os leitores de tela não leem os pixels na tela; eles navegam estritamente através da Árvore de Tags. Um PDF sem tags estruturadas é apenas uma "imagem cega" para a tecnologia assistiva.
+
+3. **Audiodescrição Pedagógica (ADD / Pedagogical Audio Description)**:  
+   *Definição*: Modalidade especializada de audiodescrição aplicada a conteúdos didáticos, científicos e avaliativos (livros escolares, provas de vestibular, exames do ENEM e apostilas).  
+   *Importância na Acessibilidade*: Diferencia-se da audiodescrição cultural ao exigir rigoroso alinhamento com os objetivos de aprendizagem, proibindo explicitamente que a descrição revele antecipadamente a resposta de uma questão (neutralidade avaliativa) e preservando a carga cognitiva necessária para a resolução autônoma pelo estudante.
+
+4. **DAISY (Digital Accessible Information System)**:  
+   *Definição*: Padrão internacional aberto (ANSI/NISO Z39.86) e consórcio técnico global para a criação de livros digitais e publicações em áudio e texto sincronizados.  
+   *Importância na Acessibilidade*: Permite que pessoas cegas, com baixa visão ou dislexia naveguem por capítulos, seções, parágrafos e frases de um livro de áudio com a mesma precisão de quem folheia um livro impresso, utilizando linguagem de sincronização temporal (SMIL). No Brasil, deu origem ao ecossistema nacional **MECDAISY**.
+
+5. **DPUB-ARIA (Digital Publishing WAI-ARIA)**:  
+   *Definição*: Módulo de papéis semânticos estendido do W3C WAI-ARIA especificamente projetado para a indústria editorial digital e livros em formato EPUB 3.  
+   *Importância na Acessibilidade*: Introduz atributos como `role="doc-chapter"`, `role="doc-footnote"`, `role="doc-glossary"`, `role="doc-pagebreak"` e `role="doc-abstract"`, permitindo que os leitores de tela identifiquem com precisão componentes clássicos de uma publicação impressa.
+
+6. **Matterhorn Protocol**:  
+   *Definição*: Protocolo técnico de homologação publicado pela *PDF Association* que cataloga 31 pontos de verificação e 136 regras de falha específicas para atestar se um documento cumpre integralmente a norma internacional ISO 14289 (PDF/UA).  
+   *Importância na Acessibilidade*: Divide os testes entre verificações automatizadas por software (ex: PAC 2024, veraPDF) e verificações que exigem auditoria humana obrigatória (como contraste, coerência do texto alternativo e ordem lógica de leitura).
+
+7. **MathML (Mathematical Markup Language)**:  
+   *Definição*: Aplicação baseada em XML desenvolvida pelo W3C para codificar fórmulas, equações e notações matemáticas, capturando tanto a sua apresentação visual (*Presentation MathML*) quanto a sua estrutura semântica profunda (*Content MathML*).  
+   *Importância na Acessibilidade*: Permite que os leitores de tela verbalizem fórmulas complexas com exatidão fonética e naveguem passo a passo pelo interior da equação (ex: entrar no numerador, explorar um radical ou inspecionar um índice de somatório), além de possibilitar a conversão direta para Braille Matemático (Código Nemeth).
+
+8. **Ordem de Leitura Lógica (Reading Order / Linearization)**:  
+   *Definição*: A sequência linear exata na qual o conteúdo de um documento deve ser interpretado e anunciado pelas tecnologias assistivas, independentemente do leiaute visual bidimensional na página.  
+   *Importância na Acessibilidade*: Em leiautes de múltiplas colunas, caixas laterais (*sidebars*), infográficos ou cabeçalhos complexos, a ordem visual de diagramação pode não coincidir com a ordem lógica. O padrão ACESSILIA exige que a ordem de leitura do fluxo de tags reconstrua fielmente a lógica cognitiva pretendida pelo autor.
+
+9. **PDF/UA (Universal Accessibility — ISO 14289)**:  
+   *Definição*: Norma técnica internacional formal da ISO (dividida em PDF/UA-1 e PDF/UA-2) que define os requisitos rigorosos de acessibilidade para o formato de documento portátil (PDF).  
+   *Importância na Acessibilidade*: Exige estrutura de tags obrigatória, textos alternativos para todos os elementos não textuais, ordem lógica definida, preservação de fontes vetoriais pesquisáveis, marcação de artefatos de paginação e correspondência unívoca de caracteres Unicode.
+
+10. **Texto Alternativo Contextual (Context-Aware Alternative Text)**:  
+    *Definição*: Descrição textual de um recurso visual cuja elaboração depende intrinsecamente do propósito pedagógico, didático ou comunicativo e do texto circundante onde o recurso está inserido.  
+    *Importância na Acessibilidade*: Uma mesma fotografia (por exemplo, a pintura da *Monalisa*) requer descrições completamente distintas se estiver em um livro de história da arte (foco nas técnicas de *sfumato* e composição renascentista), em um artigo de ótica médica (foco no olhar e percepção humana) ou em um livro infantil (foco no sorriso e vestimenta). O texto alternativo jamais deve ser tratado de forma genérica ou isolada.
+
+---
+
+## 10. Considerações Finais e Próximos Passos
 
 O **ACESSILIA** consolidou-se como a iniciativa técnica mais completa e robusta do Brasil na convergência entre **descrição semântica de conteúdos** e **estruturação acessível de documentos digitais**. 
 
@@ -406,3 +488,4 @@ Ao harmonizar as melhores práticas globais (W3C, ISO, DIAGRAM Center, DAISY) co
 
 ---
 *Este relatório foi compilado com base na totalidade dos documentos, esquemas e códigos do ecossistema [A11yDevs/normas-acessilia](https://github.com/A11yDevs/normas-acessilia).*
+
