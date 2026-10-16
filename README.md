@@ -316,17 +316,21 @@ O relatório gerado **DEVE** seguir o formato:
 
 | Padrão / Norma | Escopo Técnico | Família(s) Aplicável(is) |
 |-----------------|----------------|--------------------------|
+| [ABNT NBR 17225:2025](https://www.abntcatalogo.com.br/) | Norma Brasileira de Acessibilidade em Conteúdo e Aplicações Web (LBI Art. 63 / ABNT CB-040) | 100, 200, 300, 400, 500, 600, 700 |
+| [ABNT NBR 17060:2022](https://www.abntcatalogo.com.br/) | Acessibilidade em aplicações móveis e interfaces digitais | 200, 300, 600 |
+| [ABNT NBR 14724 / 10520 / 6027](https://www.abntcatalogo.com.br/) | Trabalhos acadêmicos, citações em bloco e estruturação de sumários | 400, 500, 800 |
+| [Manual REBECA 2025](https://repositorio.unb.br/bitstream/10482/52961/1/REBECA_ManualPadronizacao.pdf) | Padronização documental universitária e audiodescrição didática (ADD) | 100, 400, 500, 600, 800 |
 | [WCAG 2.2](https://www.w3.org/TR/WCAG22/) / [ISO/IEC 40500](https://www.iso.org/standard/57363.html) | Diretrizes de Acessibilidade para Conteúdo Web (W3C / ISO) | 200, 300, 400, 500, 600, 700 |
-| [WAI-ARIA 1.2](https://www.w3.org/TR/wai-aria-1.2/) | Semântica estrutural e acessibilidade para aplicações interativas | 200, 300, 600 |
+| [WAI-ARIA 1.2](https://www.w3.org/TR/wai-aria-1.2/) / [DPUB-ARIA 1.1](https://www.w3.org/TR/dpub-aria-1.1/) | Semântica estrutural, aplicações interativas e papéis editoriais | 200, 300, 600, 800 |
+| [DIAGRAM Center Guidelines](http://diagramcenter.org/) | Diretrizes especializadas para descrição de imagens e gráficos complexos (STEM) | 200, 300, 400, 500 |
+| [BANA Tactile Graphics / Nemeth](http://www.brailleauthority.org/) | Diretrizes para gráficos táteis, notação matemática e científica acessível | 300, 400, 500 |
 | [HTML-AAM / Core-AAM](https://www.w3.org/TR/html-aam-1.0/) | Mapeamento de elementos e acessibilidade de navegadores | 200, 300 |
 | [PDF/UA-1 (ISO 14289-1)](https://www.iso.org/standard/64599.html) / [PDF/UA-2 (ISO 14289-2)](https://www.iso.org/standard/82216.html) | Universal Accessibility em formato PDF (estrutura, tags e leitura linear) | 200, 300, 400, 500, 800 |
+| [Matterhorn Protocol 1.1](https://www.pdfa.org/resource/matterhorn-protocol-1-1/) | Modelo de testes e catálogo de falhas para validação de PDF/UA | 700, 800 |
 | [EPUB 3.3](https://www.w3.org/TR/epub-33/) / [EPUB Accessibility 1.1 (ISO/IEC 23761)](https://www.iso.org/standard/84542.html) | Publicações e livros digitais estruturados e acessíveis | 200, 300, 400, 500, 800 |
 | [DAISY 3 (ANSI/NISO Z39.86)](https://daisy.org/activities/standards/daisy/daisy-3/) / [MECDAISY (Nota Técnica nº 21/MEC)](http://portal.mec.gov.br/) | Áudio digital sincronizado e publicações multimídia estruturadas | 600, 800 |
 | [ISO 9241-171](https://www.iso.org/standard/39080.html) | Ergonomia da interação humano-sistema — Acessibilidade de software e documentos | 200, 300, 700 |
 | [ISO/IEC Guide 71](https://www.iso.org/standard/57385.html) / [ABNT ISO/IEC Guia 71](https://www.abntcatalogo.com.br/) | Guia para integração de acessibilidade em normas e projetos | 100, 700, 800 |
-| [ABNT NBR 17060:2022](https://www.abntcatalogo.com.br/) | Acessibilidade em aplicações móveis e interfaces digitais | 200, 300, 600 |
-| [ABNT NBR 14724 / 10520 / 6027](https://www.abntcatalogo.com.br/) | Trabalhos acadêmicos, citações em bloco e estruturação de sumários | 400, 500, 800 |
-| [Manual REBECA 2025](https://repositorio.unb.br/bitstream/10482/52961/1/REBECA_ManualPadronizacao.pdf) | Padronização documental universitária e audiodescrição didática (ADD) | 100, 400, 500, 600, 800 |
 | [EN 301 549 v3.2.1](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf) | Requisitos europeus de TIC acessível | Todas |
 | [Section 508](https://www.section508.gov/) | Requisitos de acessibilidade governamental (EUA) | Todas |
 | [ADLAB PRO](https://www.adlabproject.eu/) | Diretrizes de formação e prática de audiodescrição | 600 |

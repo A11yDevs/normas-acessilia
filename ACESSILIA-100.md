@@ -161,6 +161,11 @@ Estes IDs são **fixos** e não mudam entre versões.
 | **ADD (Audiodescrição Didática)** | Modalidade de audiodescrição voltada a fins pedagógicos e acadêmicos que considera o receptor, a disciplina e o objetivo de ensino sem induzir respostas ou sobrecarregar cognitivamente (Vergara-Nunes, 2016; REBECA, 2025). |
 | **Nota do Digitalizador / Adaptador** | Indicação textual padronizada que insere metadados, alertas de consulta docente ou a própria audiodescrição no corpo de obras digitalizadas acessíveis (padrão REBECA/MEC). |
 | **Marcadores de Delimitação Descritiva** | Tags textuais explícitas (`[Início da descrição]` e `[Fim da descrição]`, bem como `[Início da citação]` e `[Final da citação]`) para orientar com precisão softwares leitores de tela na transição entre texto original e conteúdo adaptado. |
+| **Two-Part Strategy (Estratégia em Duas Partes)** | Prática recomendada pelo W3C e DIAGRAM Center que combina um texto alternativo conciso (`alt`) com uma descrição longa e estruturada (tabela de dados ou bloco textual adjacente/recolhível). |
+| **MathML (Mathematical Markup Language)** | Vocabulário XML padrão da W3C para representar a estrutura sintática e o significado matemático de fórmulas para navegação por leitores de tela e conversão em braille digital (Nemeth). |
+| **DPUB-ARIA (Digital Publishing WAI-ARIA)** | Módulo semântico de papéis WAI-ARIA da W3C para componentes estruturais de livros e publicações digitais (ex.: `doc-chapter`, `doc-glossary`, `doc-footnote`, `doc-pagebreak`). |
+| **Matterhorn Protocol** | Modelo de testes e catálogo de 31 pontos de verificação e 136 falhas da PDF Association para auditoria e validação de conformidade com a ISO 14289 (PDF/UA). |
+| **PDF/UA (Universal Accessibility)** | Norma internacional (ISO 14289-1 e ISO 14289-2) que define requisitos para que documentos em formato PDF contenham árvore de tags semânticas, linearização e navegabilidade universal. |
 
 ### 6.4 Termos Gerais
 

@@ -7,7 +7,7 @@
 Aplica‑se a artigos científicos, teses, relatórios técnicos e revistas acadêmicas, independentemente do formato (PDF, HTML, LaTeX). Inclui abstracts, figuras, tabelas e compilações de dados.
 
 ## 2. Referências de Norma
-Principais referências: [ACESSILIA‑100](../../ACESSILIA-100.md), **Manual de Padronização REBECA (Rede Brasileira de Estudos e Conteúdos Adaptados, 2025)**, **ABNT NBR 10520:2023** (Citações em documentos), **ABNT NBR 6027:2012** (Sumário), **ABNT NBR 14724:2011/2024** (Trabalhos acadêmicos), [ACM Digital Library](https://dl.acm.org/), DOI de obras, WG for metadata ([Dublin Core](https://www.dublincore.org/), [COAR](https://www.coar-repositories.org/)). As verificações **DEVEM** seguir [WCAG 2.2](https://www.w3.org/TR/WCAG22/) e [PDF/UA‑1](https://www.iso.org/standard/64599.html).
+Principais referências: [ACESSILIA‑100](../../ACESSILIA-100.md), **Manual de Padronização REBECA (Rede Brasileira de Estudos e Conteúdos Adaptados, 2025)**, **ABNT NBR 10520:2023** (Citações em documentos), **ABNT NBR 6027:2012** (Sumário), **ABNT NBR 14724:2011/2024** (Trabalhos acadêmicos), **W3C Mathematical Markup Language (MathML 4.0)**, **DIAGRAM Center STEM Guidelines**, **BANA Guidelines and Standards for Tactile Graphics**, [ACM Digital Library](https://dl.acm.org/), DOI de obras, WG for metadata ([Dublin Core](https://www.dublincore.org/), [COAR](https://www.coar-repositories.org/)). As verificações **DEVEM** seguir [WCAG 2.2](https://www.w3.org/TR/WCAG22/), [ABNT NBR 17225:2025](https://www.abntcatalogo.com.br/) e [PDF/UA‑1/2](https://www.iso.org/standard/64599.html).
 
 ## 3. Diretrizes Principais
 
@@ -107,3 +107,19 @@ Esta família aplica‑se a publicações científicas e técnicas revisadas por
 - **Declaração de conformidade e perfis** → usar [ACESSILIA‑800](../800/ACESSILIA‑800.md).
 
 A validação de DOI e acesso a dados **DEVE** depender de serviços externos (CrossRef, DataCite, Zenodo) e pode falhar por indisponibilidade temporária.
+
+## 10. Catálogo de Técnicas e Falhas
+
+### 10.1 Técnicas Suficientes e Recomendadas
+
+- **T-400-01 (Delimitação Auditiva de Citações)**: Citações longas (recuo ABNT de 4 cm) **DEVEM** ser precedidas por `[Início da citação]` e sucedidas por `[Final da citação]` para contextualizar usuários de sintetizadores de voz.
+- **T-400-02 (Citação ABNT Integrada)**: Referências bibliográficas completas em conformidade com a ABNT NBR 10520, contendo identificador DOI persistente com prefixo resolvível (`https://doi.org/...`).
+- **T-400-03 (Distinção de Fontes)**: Separar formalmente a autoria: declarar `Fonte da imagem:` (obra de origem) e `Fonte da descrição:` (adaptador/instituição).
+- **T-400-04 (Notação Matemática em MathML/LaTeX Acessível)**: Fórmulas, expressões algébricas e equações científicas **DEVEM** ser codificadas primariamente em MathML semântico ou MathJax com texto falado equivalente (*speech-rule-engine*), evitando imagens rasterizadas sem notação tátil/MathML.
+
+### 10.2 Falhas Comuns
+
+- **F-400-01**: Inserir expressões matemáticas complexas apenas como imagens bitmap (.png/.jpg) sem código MathML, LaTeX ou transcrição linear acessível.
+- **F-400-02**: Suprimir ou omitir dados de legendas de gráficos e esquemas sob pretexto de "resumo", prejudicando a reprodutibilidade científica para o pesquisador cego.
+- **F-400-03**: Indicar link para dados suplementares ou repositório protegido por autenticação restrita sem especificar o protocolo de acesso.
+

@@ -7,7 +7,7 @@
 Define métricas de avaliação, procedimentos de validação e requisitos de conformidade para todos os conteúdos descritos pelo padrão ACESSILIA.
 
 ## 2. Referências de Norma
-Conforme [ACESSILIA‑100](../../ACESSILIA-100.md) para princípios de terminologia e auditabilidade. Em adição ao [WCAG 2.2](https://www.w3.org/TR/WCAG22/). Aplica‑se a todas as famílias de conteúdo: [200](../200/ACESSILIA‑200.md), [300](../300/ACESSILIA‑300.md), [400](../400/ACESSILIA‑400.md), [500](../500/ACESSILIA‑500.md), [600](../600/ACESSILIA‑600.md) e [800](../800/ACESSILIA‑800.md) para perfis de conformidade.
+Conforme [ACESSILIA‑100](../../ACESSILIA-100.md) para princípios de terminologia e auditabilidade. Em adição ao [WCAG 2.2](https://www.w3.org/TR/WCAG22/), [ABNT NBR 17225:2025](https://www.abntcatalogo.com.br/) (Acessibilidade em Conteúdo e Aplicações Web), [Matterhorn Protocol 1.1](https://www.pdfa.org/resource/matterhorn-protocol-1-1/) (matriz de validação de conformidade PDF/UA), [ISO/IEC Guide 71](https://www.iso.org/standard/57385.html) e [ISO 9241-171](https://www.iso.org/standard/39080.html). Aplica‑se a todas as famílias de conteúdo: [200](../200/ACESSILIA‑200.md), [300](../300/ACESSILIA‑300.md), [400](../400/ACESSILIA‑400.md), [500](../500/ACESSILIA‑500.md), [600](../600/ACESSILIA‑600.md) e [800](../800/ACESSILIA‑800.md) para perfis de conformidade.
 
 ## 3. Diretrizes Principais
 

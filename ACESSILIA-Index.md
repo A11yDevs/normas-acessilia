@@ -50,16 +50,20 @@
 
 | Padrão / Norma | Escopo | Família(s) Aplicável(is) |
 |----------------|--------|--------------------------|
+| [ABNT NBR 17225:2025](https://www.abntcatalogo.com.br/) | Acessibilidade em Conteúdo e Aplicações Web (ABNT CB-040 / LBI) | 100, 200, 300, 400, 500, 600, 700 |
+| [ABNT NBR 17060 / 14724 / 10520](https://www.abntcatalogo.com.br/) | Acessibilidade em apps móveis, trabalhos e citações | 200, 300, 400, 500, 800 |
+| [Manual REBECA 2025](https://repositorio.unb.br/bitstream/10482/52961/1/REBECA_ManualPadronizacao.pdf) | Padronização documental universitária e ADD | 100, 400, 500, 600, 800 |
 | [WCAG 2.2](https://www.w3.org/TR/WCAG22/) / [ISO/IEC 40500](https://www.iso.org/standard/57363.html) | Acessibilidade de conteúdo Web (W3C / ISO) | 200, 300, 400, 500, 600, 700 |
-| [WAI-ARIA 1.2](https://www.w3.org/TR/wai-aria-1.2/) | Semântica de acessibilidade de aplicações ricas | 200, 300, 600 |
+| [WAI-ARIA 1.2](https://www.w3.org/TR/wai-aria-1.2/) / [DPUB-ARIA 1.1](https://www.w3.org/TR/dpub-aria-1.1/) | Semântica de acessibilidade de aplicações e estruturas editoriais | 200, 300, 600, 800 |
+| [DIAGRAM Center Guidelines](http://diagramcenter.org/) | Diretrizes para imagens complexas, diagramas e dados STEM | 200, 300, 400, 500 |
+| [BANA Tactile Graphics / Nemeth](http://www.brailleauthority.org/) | Diretrizes de gráficos táteis e notação matemática/científica | 300, 400, 500 |
 | [HTML-AAM / Core-AAM](https://www.w3.org/TR/html-aam-1.0/) | Acessibilidade e mapeamento estrutural de navegadores | 200, 300 |
 | [PDF/UA-1 / PDF/UA-2 (ISO 14289)](https://www.iso.org/standard/64599.html) | Universal Accessibility em formato PDF (tags e semântica) | 200, 300, 400, 500, 800 |
+| [Matterhorn Protocol 1.1](https://www.pdfa.org/resource/matterhorn-protocol-1-1/) | Validação e catálogo de falhas para PDF/UA | 700, 800 |
 | [EPUB 3.3](https://www.w3.org/TR/epub-33/) / [EPUB Accessibility 1.1 (ISO/IEC 23761)](https://www.iso.org/standard/84542.html) | Publicações e livros digitais estruturados e acessíveis | 200, 300, 400, 500, 800 |
 | [DAISY 3 (ANSI/NISO Z39.86)](https://daisy.org/) / [MECDAISY (MEC)](http://portal.mec.gov.br/) | Áudio digital sincronizado e materiais adaptados | 600, 800 |
 | [ISO 9241-171](https://www.iso.org/standard/39080.html) | Ergonomia da interação humano-sistema e acessibilidade | 200, 300, 700 |
 | [ISO/IEC Guide 71](https://www.iso.org/standard/57385.html) / [ABNT ISO/IEC Guia 71](https://www.abntcatalogo.com.br/) | Integração de requisitos de acessibilidade em padrões | 100, 700, 800 |
-| [ABNT NBR 17060 / 14724 / 10520](https://www.abntcatalogo.com.br/) | Acessibilidade em apps móveis, trabalhos e citações | 200, 300, 400, 500, 800 |
-| [Manual REBECA 2025](https://repositorio.unb.br/bitstream/10482/52961/1/REBECA_ManualPadronizacao.pdf) | Padronização documental universitária e ADD | 100, 400, 500, 600, 800 |
 | [EN 301 549 v3.2.1](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf) | Requisitos europeus de TIC | Todas |
 | [Section 508](https://www.section508.gov/) | Acessibilidade governamental (EUA) | Todas |
 | [ADLAB PRO](https://www.adlabproject.eu/) | Diretrizes de audiodescrição | 600 |

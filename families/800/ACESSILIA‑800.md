@@ -7,7 +7,7 @@
 Define níveis de conformidade, perfis de acessibilidade e mecanismos de extensão do padrão ACESSILIA. Estabelece como implementações devem declarar conformidade e como novos perfis podem ser criados.
 
 ## 2. Referências de Norma
-Conforme [ACESSILIA‑100](../../ACESSILIA-100.md) para princípios de terminologia e auditabilidade. Em adição ao [WCAG 2.2](https://www.w3.org/TR/WCAG22/), [EPUB 3](https://www.w3.org/TR/epub-33/), [PDF/UA‑1](https://www.iso.org/standard/64599.html), [EN 301 549 v3.2.1](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf) e [Section 508](https://www.section508.gov/) para requisitos de acessibilidade. Referencia [ACESSILIA‑700](../700/ACESSILIA‑700.md) para critérios de validação.
+Conforme [ACESSILIA‑100](../../ACESSILIA-100.md) para princípios de terminologia e auditabilidade. Em adição ao [WCAG 2.2](https://www.w3.org/TR/WCAG22/), [ABNT NBR 17225:2025](https://www.abntcatalogo.com.br/) (Acessibilidade Web), [EPUB Accessibility 1.1 (ISO/IEC 23761)](https://www.iso.org/standard/84542.html), [DPUB-ARIA 1.1](https://www.w3.org/TR/dpub-aria-1.1/), [PDF/UA‑1/2 (ISO 14289-1 e ISO 14289-2)](https://www.iso.org/standard/64599.html), [Matterhorn Protocol 1.1](https://www.pdfa.org/resource/matterhorn-protocol-1-1/), [DAISY 3 (ANSI/NISO Z39.86)](https://daisy.org/), [EN 301 549 v3.2.1](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf) e [Section 508](https://www.section508.gov/) para requisitos de acessibilidade. Referencia [ACESSILIA‑700](../700/ACESSILIA‑700.md) para critérios de validação.
 
 ## 3. Diretrizes Principais
 

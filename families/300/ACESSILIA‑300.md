@@ -7,7 +7,7 @@
 Aplica‑se a todas as representações visuais de dados que podem aparecer em documentos digitais, apresentações, relatórios científicos e dashboards interativos: gráficos de barras, linhas, pizza, radar, heat‑map, gráficos de dispersão; tabelas manuscritas ou digitais; diagramas UML, ER, fluxogramas, mapas conceptuais.
 
 ## 2. Referências de Norma
-Conforme [ACESSILIA‑100](../../ACESSILIA-100.md) para princípios de terminologia e auditabilidade; em adição ao [WCAG 2.2](https://www.w3.org/TR/WCAG22/), [EPUB 3](https://www.w3.org/TR/epub-33/) e [PDF/UA‑1](https://www.iso.org/standard/64599.html).
+Conforme [ACESSILIA‑100](../../ACESSILIA-100.md) para princípios de terminologia e auditabilidade; em adição ao [WCAG 2.2](https://www.w3.org/TR/WCAG22/), [ABNT NBR 17225:2025](https://www.abntcatalogo.com.br/) (conteúdo e aplicações digitais), [DIAGRAM Center Image Description Guidelines](http://diagramcenter.org/) (descrição de gráficos e diagramas complexos), [BANA Guidelines and Standards for Tactile Graphics](http://www.brailleauthority.org/), [EPUB 3](https://www.w3.org/TR/epub-33/) e [PDF/UA‑1/2](https://www.iso.org/standard/64599.html).
 
 ## 3. Diretrizes Principais
 
@@ -103,3 +103,17 @@ Esta família aplica‑se a representações visuais de dados estáticas. Os seg
 - **Declaração de conformidade e perfis** → usar [ACESSILIA‑800](../800/ACESSILIA‑800.md).
 
 Diagramas UML, ER e fluxogramas são incluídos desde que representem dados ou processos de forma visual estática.
+
+## 10. Catálogo de Técnicas e Falhas
+
+### 10.1 Técnicas Suficientes e Recomendadas (DIAGRAM Center & BANA)
+
+- **T-300-01 (Tabela Equivalente Adjacente)**: Para gráficos densos ou dispersões com múltiplos pontos, fornecer uma tabela de dados HTML/Markdown estruturada imediatamente após ou vinculada via `<details>`/`<summary>`, em conformidade com as diretrizes do DIAGRAM Center.
+- **T-300-02 (Abordagem de Duas Etapas - Two-Part Strategy)**: Utilizar texto alternativo conciso (`alt`) identificando o tipo de gráfico, escopo e local da descrição completa, associado a um bloco de descrição detalhada contendo tendências e pontos máximos/mínimos exatos.
+- **T-300-03 (Decomposição de Fluxogramas e Diagramas de Rede)**: Descrever diagramas conceituais, árvores e fluxogramas utilizando listas aninhadas ou tabelas de nós/arestas (origem, ação/condição, destino), preservando a lógica direcional sem ambiguidades.
+
+### 10.2 Falhas Comuns
+
+- **F-300-01**: Descrever apenas o estilo visual (ex.: "gráfico com barras azuis e laranjas") omitindo os valores numéricos, eixos, unidades e fonte de dados.
+- **F-300-02**: Utilizar apenas cor para diferenciar categorias ou linhas de tendência em gráficos sem fornecer marcadores textuais, padrões visuais tracejados ou rótulos diretos.
+
