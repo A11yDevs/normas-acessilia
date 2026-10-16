@@ -2,7 +2,7 @@
 ## Sistema Brasileiro de Normas de Acessibilidade Digital e Descrição Semântica
 
 > **Status do Documento**: Documento de Trabalho Dinâmico (Suscetível a Atualizações Contínuas)  
-> **Versão Base**: 1.1.0 (Com expansões 2026/2027)  
+> **Versão Base**: 1.1.0 (Com expansões de 2026)  
 > **Data de Emissão**: 16 de Outubro de 2026  
 > **Comitê Responsável**: Equipe Técnica e Editorial ACESSILIA ([A11yDevs](https://github.com/A11yDevs/normas-acessilia))  
 > **Harmonização Normativa**: RFC 2119/8174, WCAG 2.2, ABNT NBR 17225:2025, ISO 14289 (PDF/UA), ISO/IEC 23761 (EPUB), ANSI/NISO Z39.86 (DAISY) e Manual REBECA 2025.
