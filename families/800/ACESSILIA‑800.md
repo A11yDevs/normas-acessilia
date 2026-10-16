@@ -39,11 +39,12 @@ Conforme [ACESSILIA‑100](../../ACESSILIA-100.md) para princípios de terminolo
 
 ### 4.3 Mapeamento com Padrões Externos
 
-| Nível ACESSILIA | WCAG 2.2 | EPUB Accessibility | PDF/UA-1 | EN 301 549 | Section 508 |
-|---|---|---|---|---|---|
-| **ACESSILIA‑A** | Level A | WCAG Level A conformance | §7.1–7.5 básicos | Cláusulas 5–6 | E205.3–E205.4 |
-| **ACESSILIA‑AA** | Level AA | WCAG Level AA conformance | Conformidade completa | Cláusulas 5–9 | E205.3–E205.4, E205.7 |
-| **ACESSILIA‑AAA** | Level AAA | WCAG Level AAA conformance | Excedente | Cláusulas 5–12 | Excedente |
+| Nível ACESSILIA | WCAG 2.2 / ABNT NBR 17225 | EPUB Accessibility (ISO/IEC 23761) | PDF/UA (ISO 14289) | Manual REBECA 2025 | EN 301 549 | Section 508 |
+|---|---|---|---|---|---|---|
+| **ACESSILIA‑A** | Nível A | WCAG Level A conformance | §7.1–7.5 básicos | Requisitos essenciais de transcrição | Cláusulas 5–6 | E205.3–E205.4 |
+| **ACESSILIA‑AA** | Nível AA | WCAG Level AA conformance | Conformidade completa | Padrão REBECA completo (Perfil ACL-800-PRF-007) | Cláusulas 5–9 | E205.3–E205.4, E205.7 |
+| **ACESSILIA‑AAA** | Nível AAA | WCAG Level AAA conformance | Excedente | Padrão REBECA avançado com recursos ampliados | Cláusulas 5–12 | Excedente |
+
 
 ### 4.4 Mapeamento Detalhado ACESSILIA → WCAG 2.2
 
@@ -109,7 +110,7 @@ Um perfil de acessibilidade é um conjunto de critérios e requisitos específic
 | **Gráfico Científico** | `ACL-800-PRF-004` | 300, 400 | Requisitos para gráficos de dados e diagramas científicos. |
 | **Captura de Tela** | `ACL-800-PRF-005` | 200 | Requisitos para descrição de interfaces e capturas de tela. |
 | **Conteúdo STEM** | `ACL-800-PRF-006` | 300, 400, 500 | Requisitos para ciência, tecnologia, engenharia e matemática. |
-| **Documento Acadêmico (REBECA)** | `ACL-800-PRF-007` | 200, 300, 400, 500 | Requisitos do Manual REBECA para adaptação de livros e artigos acadêmicos digitais acessíveis (ABNT, Lei 9.610/98, ADD e delimitação de descrição). |
+| **Documento Acadêmico (REBECA)** | `ACL-800-PRF-007` | 200, 300, 400, 500 | Requisitos do Manual REBECA para adaptação de livros e artigos acadêmicos digitais acessíveis (ABNT, amparo na Lei de Direitos Autorais nº 9.610/1998, ADD e delimitação de descrição). |
 | **Documento PDF/UA (ISO 14289)** | `ACL-800-PRF-008` | 200, 300, 400, 500, 700 | Requisitos estritos de acessibilidade universal para PDFs com tags semânticas, linearização e metadados XMP. |
 | **Publicação EPUB Acessível (ISO/IEC 23761)** | `ACL-800-PRF-009` | 200, 300, 400, 500, 700 | Requisitos para EPUB 3 conforme W3C EPUB Accessibility 1.1 e metadados schema.org/accessibility. |
 | **Áudio Digital e Texto Sincronizado (DAISY / MECDAISY)** | `ACL-800-PRF-010` | 500, 600, 700 | Requisitos para livros falados e multimídia com sincronização temporal SMIL (ANSI/NISO Z39.86 e MECDAISY). |

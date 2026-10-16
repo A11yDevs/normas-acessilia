@@ -54,7 +54,7 @@ O padrão fornece:
 | Ausência de metadata | **Esquemas JSON/XSD** com campos obrigatórios |
 | Dificuldade de verificação automatizada | **acessilia-lint** com regras por família |
 | Falta de rastreabilidade | **Identificadores permanentes** (`ACL-<FAMÍLIA>-<TIPO>-<NÚMERO>`) |
-| Incompatibilidade com normas externas | Mapeamento para **WCAG 2.2**, **EPUB 3**, **PDF/UA-1** |
+| Incompatibilidade com normas e padrões | Harmonização com **Manual REBECA 2025**, **ABNT NBR 17225**, **WCAG 2.2**, **EPUB 3**, **PDF/UA** e **DAISY** |
 
 ---
 
