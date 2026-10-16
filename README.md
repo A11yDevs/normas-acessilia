@@ -46,7 +46,7 @@ O padrão fornece:
 |----------|-------------------|
 | Descrições subjetivas e com inferências | Regras de **Objetividade** e **Fidelidade** (ACESSILIA-100) |
 | Inconsistência entre descritores | Padronização de **terminologia** e **estrutura** |
-| Ausência de metadados | **Esquemas JSON/XSD** com campos obrigatórios |
+| Ausência de metadata | **Esquemas JSON/XSD** com campos obrigatórios |
 | Dificuldade de verificação automatizada | **acessilia-lint** com regras por família |
 | Falta de rastreabilidade | **Identificadores permanentes** (`ACL-<FAMÍLIA>-<TIPO>-<NÚMERO>`) |
 | Incompatibilidade com normas externas | Mapeamento para **WCAG 2.2**, **EPUB 3**, **PDF/UA-1** |
@@ -170,7 +170,9 @@ O arquivo **`manifest.yml`** atua como catálogo de famílias e controla a ordem
 
 > Implementações que não atendam integralmente ao nível declarado **NÃO DEVEM** declarar conformidade.
 
----
+### 6.3 Conformidade Parcial
+
+Implementações que não alcancem a totalidade dos critérios para o nível pretendido **NÃO DEVEM** declarar conformidade global (ex.: "conforme ACESSILIA-AA"). Podem, contudo, informar os critérios implementados e aprovados individualmente (ex.: "atende a ACL-200-IMG-001 a ACL-200-IMG-006") para fins de avaliação e relatório técnico de auditoria.
 
 ## 7. Identificadores Permanentes
 
@@ -185,9 +187,10 @@ Os identificadores seguem o padrão `ACL-<FAMÍLIA>-<TIPO>-<NÚMERO>`:
 | 500 | `ACL-500-EDU-NNN` | `ACL-500-EDU-001` |
 | 600 | `ACL-600-MDM-NNN` | `ACL-600-MDM-001` |
 | 700 | `ACL-700-VAL-NNN` | `ACL-700-VAL-001` |
-| 800 | `ACL-800-PRF-NNN` | `ACL-800-PRF-001` |
+| 800 (Critérios) | `ACL-800-CRT-NNN` | `ACL-800-CRT-001` |
+| 800 (Perfis) | `ACL-800-PRF-NNN` | `ACL-800-PRF-001` |
 
-> Estes IDs são **fixos** e não mudam entre versões.
+> Estes IDs são **fixos** e não mudam entre versões. A Família 800 adota `CRT` para critérios de validação e `PRF` para perfis de acessibilidade, evitando colisão de identificadores.
 
 ---
 
@@ -308,11 +311,16 @@ O relatório gerado **DEVE** seguir o formato:
 
 | Padrão | Escopo | Família(s) Aplicável(is) |
 |--------|--------|--------------------------|
-| [WCAG 2.2](https://www.w3.org/TR/WCAG22/) | Acessibilidade web | 200, 300, 400, 500, 600 |
-| [EPUB 3](https://www.w3.org/TR/epub-33/) | Publicações acessíveis | 200, 300, 400, 500, 600 |
-| [PDF/UA-1](https://www.iso.org/standard/64599.html) | Documentos PDF acessíveis | 200, 300, 400, 500 |
-| [EN 301 549 v3.2.1](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf) | Requisitos europeus | Todas |
-| [Section 508](https://www.section508.gov/) | Acessibilidade governamental (EUA) | Todas |
+| [WCAG 2.2](https://www.w3.org/TR/WCAG22/) | Acessibilidade de conteúdo Web (W3C) | 200, 300, 400, 500, 600 |
+| [WAI-ARIA 1.2](https://www.w3.org/TR/wai-aria-1.2/) | Aplicações ricas e semântica de acessibilidade web | 200, 300, 600 |
+| [HTML-AAM / Core-AAM](https://www.w3.org/TR/html-aam-1.0/) | Mapeamento de elementos e acessibilidade de browsers | 200, 300 |
+| [EPUB 3](https://www.w3.org/TR/epub-33/) / [EPUB Accessibility 1.1](https://www.w3.org/TR/epub-a11y-11/) | Publicações e livros digitais acessíveis | 200, 300, 400, 500, 800 |
+| [PDF/UA-1 (ISO 14289)](https://www.iso.org/standard/64599.html) | Documentos PDF universalmente acessíveis | 200, 300, 400, 500, 800 |
+| [EN 301 549 v3.2.1](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf) | Requisitos europeus de TIC acessível | Todas |
+| [Section 508](https://www.section508.gov/) | Requisitos de acessibilidade governamental (EUA) | Todas |
+| [ISO 9241-171](https://www.iso.org/standard/39080.html) | Ergonomia da interação humano-sistema e acessibilidade de software | 200, 300, 700 |
+| [DAISY 3 / Knowledge Base](https://daisy.org/) | Publicações de áudio digital e texto sincronizado | 600, 800 |
+| [ADLAB PRO](https://www.adlabproject.eu/) | Diretrizes europeias de audiodescrição | 600 |
 
 ---
 

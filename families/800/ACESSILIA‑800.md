@@ -13,11 +13,11 @@ Conforme [ACESSILIA‑100](../../ACESSILIA-100.md) para princípios de terminolo
 
 | Código | Diretriz | Métrica de Avaliação | Comentário |
 |--------|----------|----------------------|------------|
-| ACL‑800‑PRF‑001 | **Conformidade** | Nível de conformidade declarado (A, AA ou AAA). | Campo `conformanceLevel` no metadata. |
-| ACL‑800‑PRF‑002 | **Famílias** | Lista de famílias aplicáveis. | Campo `families` no metadata. |
-| ACL‑800‑PRF‑003 | **Tipos MIME** | Pelo menos 1 tipo MIME válido. | Campo `mediaTypes` no metadata. |
-| ACL‑800‑PRF‑004 | **Metadados** | Lista de campos obrigatórios. | Campo `requiredMetadata` no metadata. |
-| ACL‑800‑PRF‑005 | **Extensões** | Documentação de critérios adicionais. | Quando o perfil adicionar critérios além das famílias. |
+| ACL‑800‑CRT‑001 | **Conformidade** | Nível de conformidade declarado (A, AA ou AAA). | Campo `conformanceLevel` no metadata. |
+| ACL‑800‑CRT‑002 | **Famílias** | Lista de famílias aplicáveis. | Campo `families` no metadata. |
+| ACL‑800‑CRT‑003 | **Tipos MIME** | Pelo menos 1 tipo MIME válido. | Campo `mediaTypes` no metadata. |
+| ACL‑800‑CRT‑004 | **Metadata** | Lista de campos obrigatórios. | Campo `requiredMetadata` no metadata. |
+| ACL‑800‑CRT‑005 | **Extensões** | Documentação de critérios adicionais. | Quando o perfil adicionar critérios além das famílias. |
 
 ## 4. Níveis de Conformidade
 
@@ -84,7 +84,7 @@ A tabela a seguir mapeia critérios específicos do ACESSILIA com as Success Cri
 | ACL‑800‑CRT‑001 | 800 | N/A | N/A | Declaração de conformidade |
 | ACL‑800‑CRT‑002 | 800 | N/A | N/A | Lista de famílias |
 | ACL‑800‑CRT‑003 | 800 | N/A | N/A | Tipos MIME |
-| ACL‑800‑CRT‑004 | 800 | N/A | N/A | Metadados obrigatórios |
+| ACL‑800‑CRT‑004 | 800 | N/A | N/A | Metadata obrigatórios |
 | ACL‑800‑CRT‑005 | 800 | N/A | N/A | Documentação de extensões |
 
 ### 4.5 Declaração de Conformidade
@@ -109,6 +109,7 @@ Um perfil de acessibilidade é um conjunto de critérios e requisitos específic
 | **Gráfico Científico** | `ACL-800-PRF-004` | 300, 400 | Requisitos para gráficos de dados e diagramas científicos. |
 | **Captura de Tela** | `ACL-800-PRF-005` | 200 | Requisitos para descrição de interfaces e capturas de tela. |
 | **Conteúdo STEM** | `ACL-800-PRF-006` | 300, 400, 500 | Requisitos para ciência, tecnologia, engenharia e matemática. |
+| **Documento Acadêmico (REBECA)** | `ACL-800-PRF-007` | 200, 300, 400, 500 | Requisitos do Manual REBECA para adaptação de livros e artigos acadêmicos digitais acessíveis (ABNT, Lei 9.610/98, ADD e delimitação de descrição). |
 
 ### 5.3 Estrutura de um Perfil
 
@@ -292,6 +293,52 @@ Cada perfil **DEVE** conter:
   "families": [300, 400, 500],
   "conformanceLevel": "AA",
   "license": "https://creativecommons.org/licenses/by/4.0/"
+}
+```
+
+### 7.7 Exemplo de Perfil — Documento Acadêmico Acessível (Padrão REBECA)
+
+```json
+{
+  "id": "ACL-800-PRF-007",
+  "name": "Accessibility Profile - Academic Accessible Document (REBECA)",
+  "namePt": "Perfil de Acessibilidade - Documento Acadêmico Acessível (REBECA)",
+  "description": "Requisitos baseados no Manual de Padronização REBECA para adaptação documental de livros, artigos, capítulos e teses acadêmicas.",
+  "mediaTypes": [
+    "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "application/pdf",
+    "text/html"
+  ],
+  "requiredMetadata": [
+    "title",
+    "description",
+    "language",
+    "standard",
+    "legalNotice",
+    "adaptingInstitution",
+    "namingConvention",
+    "descriptionDelimiters"
+  ],
+  "families": [200, 300, 400, 500],
+  "conformanceLevel": "AA",
+  "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+  "criteria": [
+    {
+      "id": "ACL-800-PRF-REB-001",
+      "name": "Cabeçalho de Amparo Legal",
+      "requirement": "Documento DEVE explicitar citação bibliográfica, setor/instituição adaptadora e menção ao Art. 46 da Lei 9.610/1998."
+    },
+    {
+      "id": "ACL-800-PRF-REB-002",
+      "name": "Delimitação de Audiodescrição",
+      "requirement": "Toda audiodescrição DEVE ser precedida por '[Início da descrição]' e sucedida por '[Fim da descrição]'."
+    },
+    {
+      "id": "ACL-800-PRF-REB-003",
+      "name": "Nomenclatura Padronizada de Arquivo",
+      "requirement": "O arquivo DEVE seguir o padrão: [SOBRENOME]_[PrimeiraPalavraTitulo]_[RADICAL] (ex.: SILVA_Historia_LIVR)."
+    }
+  ]
 }
 ```
 

@@ -258,6 +258,22 @@
       "type": "array",
       "items": { "type": "string" },
       "description": "Required metadata fields for the profile. Family 800."
+    },
+    "legalNotice": {
+      "type": "string",
+      "description": "Legal disclaimer or copyright exception note (e.g., Lei 9.610/1998 Art. 46 / REBECA)."
+    },
+    "adaptingInstitution": {
+      "type": "string",
+      "description": "Institution or accessibility nucleus responsible for adapting the document."
+    },
+    "descriptionDelimiters": {
+      "type": "boolean",
+      "description": "Indicates whether descriptive boundary markers ([Início da descrição] / [Fim da descrição]) are used."
+    },
+    "namingConvention": {
+      "type": "string",
+      "description": "File naming standard applied (e.g., REBECA standard)."
     }
   },
   "required": ["id", "description", "language", "license", "standard", "date", "reviewStatus"],

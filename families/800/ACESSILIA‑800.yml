@@ -105,3 +105,25 @@ profiles:
     families: [300, 400, 500]
     conformanceLevel: "AA"
     license: "https://creativecommons.org/licenses/by/4.0/"
+
+  - id: ACL-800-PRF-007
+    name: "Accessibility Profile - Academic Accessible Document (REBECA)"
+    namePt: "Perfil de Acessibilidade - Documento Acadêmico Acessível (REBECA)"
+    description: "Requisitos baseados no Manual de Padronização REBECA para adaptação documental de livros, artigos, capítulos e teses acadêmicas."
+    mediaTypes:
+      - application/vnd.openxmlformats-officedocument.wordprocessingml.document
+      - application/pdf
+      - text/html
+    requiredMetadata:
+      - title
+      - description
+      - language
+      - standard
+      - legalNotice
+      - adaptingInstitution
+      - namingConvention
+      - descriptionDelimiters
+    families: [200, 300, 400, 500]
+    conformanceLevel: "AA"
+    license: "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+

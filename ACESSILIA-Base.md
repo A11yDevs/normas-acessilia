@@ -68,9 +68,10 @@ Os identificadores seguem o padrão `ACL‑<FAMÍLIA>-<TIPO>-<NÚMERO>`.
 | 500 | `ACL‑500‑EDU‑NNN` | `ACL‑500‑EDU‑001` |
 | 600 | `ACL‑600‑MDM‑NNN` | `ACL‑600‑MDM‑001` |
 | 700 | `ACL‑700‑VAL‑NNN` | `ACL‑700‑VAL‑001` |
-| 800 | `ACL‑800‑PRF‑NNN` | `ACL‑800‑PRF‑001` |
+| 800 (Critérios) | `ACL‑800‑CRT‑NNN` | `ACL‑800‑CRT‑001` |
+| 800 (Perfis) | `ACL‑800‑PRF‑NNN` | `ACL‑800‑PRF‑001` |
 
-Estes IDs são **fixos** e não mudam entre versões.
+Estes IDs são **fixos** e não mudam entre versões. A Família 800 utiliza `CRT` para critérios de validação e `PRF` para perfis de acessibilidade.
 
 ## 6. Manifesto de Famílias
 
@@ -114,10 +115,10 @@ families:
 
 ## 7. Validação Automatizada
 
-Uma ferramenta de lint, **`acessilia-lint`**, **DEVE** ser fornecida. Ela:
+Um **linter** oficial, **`acessilia-lint`**, **DEVE** ser fornecido. Ele:
 
 1. Carrega **`schemas/acessilia.schema.json`**.
-2. Executa validação de metadados em arquivos JSON ou XML.
+2. Executa validação de metadata em arquivos JSON ou XML.
 3. Verifica regras de conteúdo por família (verbos ativos, ausência de emoções, etc.).
 4. Gera relatório em formato Markdown indicando falhas, warnings e sugestões.
 5. Pode ser integrável em CI (GitHub Actions, GitLab CI).

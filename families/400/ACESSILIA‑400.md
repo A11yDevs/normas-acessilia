@@ -7,7 +7,7 @@
 Aplica‑se a artigos científicos, teses, relatórios técnicos e revistas acadêmicas, independentemente do formato (PDF, HTML, LaTeX). Inclui abstracts, figuras, tabelas e compilações de dados.
 
 ## 2. Referências de Norma
-Principais referências: [ACESSILIA‑100](../../ACESSILIA-100.md), [ACM Digital Library](https://dl.acm.org/), DOI de obras, WG for metadata ([Dublin Core](https://www.dublincore.org/), [COAR](https://www.coar-repositories.org/)). As verificações **DEVEM** seguir [WCAG 2.2](https://www.w3.org/TR/WCAG22/) e [PDF/UA‑1](https://www.iso.org/standard/64599.html).
+Principais referências: [ACESSILIA‑100](../../ACESSILIA-100.md), **Manual de Padronização REBECA (Rede Brasileira de Estudos e Conteúdos Adaptados, 2025)**, **ABNT NBR 10520:2023** (Citações em documentos), **ABNT NBR 6027:2012** (Sumário), **ABNT NBR 14724:2011/2024** (Trabalhos acadêmicos), [ACM Digital Library](https://dl.acm.org/), DOI de obras, WG for metadata ([Dublin Core](https://www.dublincore.org/), [COAR](https://www.coar-repositories.org/)). As verificações **DEVEM** seguir [WCAG 2.2](https://www.w3.org/TR/WCAG22/) e [PDF/UA‑1](https://www.iso.org/standard/64599.html).
 
 ## 3. Diretrizes Principais
 
@@ -16,15 +16,15 @@ Principais referências: [ACESSILIA‑100](../../ACESSILIA-100.md), [ACM Digital
 | ACL‑400‑SCI‑001 | **Resultados Físicos** | 100 % dos resultados **DEVEM** ser objetivos. | Apresentar resultados sem interpretação ou inferência extra. |
 | ACL‑400‑SCI‑002 | **Referências** | 100 % das referências **DEVEM** incluir DOI ou URL válida. | Incluir bibliografia em formato DOI ou URL e permitir validação automática. |
 | ACL‑400‑SCI‑003 | **Evidência de Dados** | 100 % dos estudos **DEVEM** fornecer acesso direto aos dados. | Links para repositórios, FTP ou outras fontes acessíveis. |
-| ACL‑400‑SCI‑004 | **Rastreabilidade** | 100 % das publicações **DEVEM** documentar versão e regras de revisão. | Campo `citationMetadata` com DOI, versão, data e autor. |
+| ACL‑400‑SCI‑004 | **Rastreabilidade da Publicação** | 100 % das publicações **DEVEM** documentar versão e regras de revisão. | Campo `citationMetadata` com DOI, versão, data e autor. |
 
 ## 4. Critérios Obrigatórios (ACL‑400‑SCI‑NNN)
 
 | Identificador | Objetivo | Evidência Obrigatória | Importância | Ponto de Verificação |
 |---------------|-----------|------------------------|-------------|-----------------------|
 | ACL‑400‑SCI‑001 | Apresentar resultados sem inferência. | Seção de resultados contendo somente valores numéricos e descrição de análises estatísticas. | Alta | Ausência de termos interpretativos na seção de resultados. |
-| ACL‑400‑SCI‑002 | Bibliografia completa e validável. | Metadado `bibliography` contendo lista de referências com DOI ou URL. | Alta | Formato DOI válido em todas as entradas de `bibliography`. |
-| ACL‑400‑SCI‑003 | Dados de apoio acessíveis. | Metadado `dataAvailability` com URL ou repositório acessível. | Alta | URL retornando status HTTP 200 ou DOI resolvido. |
+| ACL‑400‑SCI‑002 | Bibliografia completa e validável. | Metadata `bibliography` contendo lista de referências com DOI ou URL. | Alta | Formato DOI válido em todas as entradas de `bibliography`. |
+| ACL‑400‑SCI‑003 | Dados de apoio acessíveis. | Metadata `dataAvailability` com URL ou repositório acessível. | Alta | URL retornando status HTTP 200 ou DOI resolvido. |
 | ACL‑400‑SCI‑004 | Rastreabilidade da publicação. | Campo `citationMetadata` com DOI, versão, data e autor. | Média | Presença de todos os subcampos obrigatórios em `citationMetadata`. |
 
 ## 5. Metadados de Exemplo (JSON)
@@ -53,12 +53,29 @@ Principais referências: [ACESSILIA‑100](../../ACESSILIA-100.md), [ACM Digital
 }
 ```
 
-## 6. Exemplos de Conformidade
+## 6. Exemplos, Técnicas e Falhas Comuns
+
+### 6.1 Exemplos de Conformidade
 
 | Exemplo | Justificativa |
 |---------|-----------|
 | **Conforme** – “Resultados: taxa de eficácia de 87,3 % (IC 95 %: 82,1‑91,4). Fonte: ensaio clínico registrado em REBEC.” | Apresenta dados numéricos objetivos, sem interpretação, com fonte verificável. |
 | **Não conforme** – “O estudo demonstrou excelentes resultados.” `[viola ACL‑400‑SCI‑001]` | Contém inferência subjetiva (“excelentes”) sem dados numéricos. |
+
+### 6.2 Catálogo de Técnicas Aplicáveis (Padrão ABNT / REBECA)
+
+| Código | Técnica | Tipo | Aplicabilidade | Critérios Atendidos |
+|--------|---------|------|----------------|---------------------|
+| `T-400-01` | **Delimitação Explícita de Citações Longas**: Em citações diretas com mais de 3 linhas, utilizar os marcadores textuais `[Início da citação]` e `[Final da citação]` (com recuo de 4 cm conforme ABNT NBR 10520 e REBECA) para clara percepção por softwares leitores de tela. | Suficiente | Artigos, teses e capítulos | `ACL-400-SCI-001`, `ACL-400-SCI-004` |
+| `T-400-02` | **Resolução Automatizada de DOI**: Associar cada entrada bibliográfica a um link persistente resolvível (formato `https://doi.org/...`). | Suficiente | Bibliografia e citações | `ACL-400-SCI-002` |
+| `T-400-03` | **Identificação de Fonte da Imagem e da Descrição**: Abaixo de figuras científicas adaptadas, declarar a `Fonte da imagem` (obra original) e a `Fonte da descrição` (audiodescritor ou núcleo de acessibilidade responsável). | Recomendada | Ilustrações e figuras científicas | `ACL-400-SCI-003`, `ACL-400-SCI-004` |
+
+### 6.3 Catálogo de Falhas Comuns
+
+| Código | Falha | Severidade | Violação | Exemplo de Falha |
+|--------|-------|------------|----------|-------------------|
+| `F-400-01` | **Supressão de Imagem Científica Complexa**: Remover a imagem ou gráfico do texto digitalizado em vez de manter a figura com a respectiva nota explicativa ou audiodescrição. | Crítica | `ACL-400-SCI-003` | Excluir diagrama anatômico impossibilitando sua consulta por alunos com baixa visão ou por suporte docente. |
+| `F-400-02` | **Adjetivação Especulativa de Conclusões**: Inserir termos como "revolucionário", "brilhante" ou "preocupante" na seção de resultados sem dados estatísticos correspondentes. | Alta | `ACL-400-SCI-001` | Adjetivar conclusões laboratoriais sem respaldo numérico. |
 
 ## 7. Estratégia de Validação
 

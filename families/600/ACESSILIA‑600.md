@@ -7,14 +7,14 @@
 Aplica‑se a vídeos, animações, apresentações interativas, podcasts e conteúdos audiovisuais que demandam descrição acessível.
 
 ## 2. Referências de Norma
-Conforme [ACESSILIA‑100](../../ACESSILIA-100.md) para princípios de terminologia e auditabilidade. Em adição ao [WCAG 2.2](https://www.w3.org/TR/WCAG22/), [DAISY 3](https://daisy.org/activities/standards/daisy/daisy-3/) e [EPUB 3](https://www.w3.org/TR/epub-33/) para multimídia acessível.
+Conforme [ACESSILIA‑100](../../ACESSILIA-100.md) para princípios de terminologia e auditabilidade. Em adição ao [WCAG 2.2](https://www.w3.org/TR/WCAG22/), [DAISY 3](https://daisy.org/activities/standards/daisy/daisy-3/), [EPUB 3](https://www.w3.org/TR/epub-33/), [Manual REBECA 2025](https://repositorio.unb.br/bitstream/10482/52961/1/REBECA_ManualPadronizacao.pdf) (adaptação de vídeos e audiodescrição para ensino superior) e Nota Técnica nº 21/MEC/SECADI/DPEE (MECDAISY 2012).
 
 ## 3. Diretrizes Principais
 
 | Código | Diretriz | Métrica de Avaliação | Comentário |
 |--------|----------|----------------------|------------|
 | ACL‑600‑MDM‑001 | **Narração** | 100 % do conteúdo multimídia **DEVE** ter descrição textual da narrativa. | A descrição **DEVE** acompanhar a progressão temporal do conteúdo. |
-| ACL‑600‑MDM‑002 | **Legendas** | 100 % dos conteúdos com áudio **DEVEM** incluir legendas sincronizadas. | Legendas **DEVEM** seguir padrão WebVTT ou SRT. |
+| ACL‑600‑MDM‑002 | **Legendas Sincronizadas** | 100 % dos conteúdos com áudio **DEVEM** incluir legendas sincronizadas. | Legendas **DEVEM** seguir padrão WebVTT ou SRT. |
 | ACL‑600‑MDM‑003 | **Áudio Descritivo** | Quando houver elementos visuais sem narração, áudio descritivo **DEVE** ser fornecido. | Campo `audioDescription` no metadata. |
 | ACL‑600‑MDM‑004 | **Controle Temporal** | 100 % dos marcadores temporais **DEVEM** usar formato ISO 8601 de duração. | Formato `PnYnMnDTnHnMnS` (ex.: `PT12M30S` para 12 minutos e 30 segundos). |
 | ACL‑600‑MDM‑005 | **Transcrição** | Conteúdos com fala **DEVEM** fornecer transcrição completa. | Campo `transcript` com texto integral. |
@@ -92,3 +92,17 @@ Esta família aplica‑se a conteúdos audiovisuais e multimídia. Os seguintes 
 - **Declaração de conformidade e perfis** → usar [ACESSILIA‑800](../800/ACESSILIA‑800.md).
 
 A sincronização de legendas WebVTT/SRT **DEVE** ser validada ferramentalmente; a verificação manual é impraticável para conteúdos longos.
+
+## 10. Catálogo de Técnicas e Falhas
+
+### 10.1 Técnicas Suficientes e Recomendadas
+
+- **T-600-01**: Sincronização temporal de legendas WebVTT/SRT com identificação explícita de locutor quando houver múltiplos participantes em debates, aulas ou seminários.
+- **T-600-02**: Inserção de audiodescrição (AD) nos intervalos de fala natural, evitando sobreposição com informações vocais críticas do docente ou palestrante.
+- **T-600-03**: Disponibilização de roteiro textual alternativo completo (transcrição expandida) contendo falas e descrição integrada das ações visuais para usuários surdocegos ou com conexões restritas.
+
+### 10.2 Falhas Comuns
+
+- **F-600-01**: Publicar vídeo institucional ou didático com legendas geradas automaticamente por IA sem revisão humana prévia.
+- **F-600-02**: Omitir descrição de slides, quadros ou demonstrações visuais essenciais que não foram verbalizadas pelo apresentador durante a gravação.
+

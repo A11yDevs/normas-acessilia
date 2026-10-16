@@ -1,5 +1,5 @@
 ACESSILIA – Padrão Técnico de Descrição Semântica
-Versão 1.0 – Draft
+Versão 1.0 – Draft [SUPERSEDED pela v1.1.0 normativa em ACESSILIA-Base e ACESSILIA-100]
 
 1. INTRODUÇÃO
 Este padrão foi desenvolvido para ser utilizado em conjunto com as WCAG 2.2, fornecendo critérios específicos para a elaboração de descrições semânticas de conteúdos visuais. O objetivo é assegurar que as descrições sejam objetivas, reproduzíveis, verificáveis, consistentes, livres de vieses desnecessários e compatíveis com revisão humana e automatizada.
@@ -15,10 +15,10 @@ Aplica‑se à produção de descrições semânticas de imagens, fotografias, g
 Uma implementação está em conformidade com este padrão quando atende integralmente aos critérios do nível de conformidade declarado (ACESSILIA‑A, ACESSILIA‑AA ou ACESSILIA‑AAA).
 
 4. LINGUAGEM NORMATIVA
-As palavras DEVE, NÃO DEVE, DEVERIA e PODE, quando escritas em letras maiúsculas, devem ser interpretadas conforme a RFC 2119 e a RFC 8174:
+As palavras DEVE, NÃO DEVE, RECOMENDA-SE e PODE, quando escritas em letras maiúsculas, devem ser interpretadas conforme a RFC 2119 e a RFC 8174:
 - **DEVE** – o requisito é obrigatório;
 - **NÃO DEVE** – o requisito é proibido;
-- **DEVERIA** – o requisito é recomendado;
+- **RECOMENDA-SE** – o requisito é recomendado;
 - **PODE** – o requisito é opcional.
 
 5. REFERÊNCIAS

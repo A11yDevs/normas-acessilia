@@ -7,7 +7,7 @@
 Aplica‑se a materiais didáticos: apostilas, slides, textos de apoio, exercícios, simulados e recursos pedagógicos digitais.
 
 ## 2. Referências de Norma
-Conforme [ACESSILIA‑100](../../ACESSILIA-100.md) para princípios de terminologia e auditabilidade. Em adição ao [WCAG 2.2](https://www.w3.org/TR/WCAG22/) e [EPUB 3](https://www.w3.org/TR/epub-33/) para acessibilidade de conteúdo educacional.
+Conforme [ACESSILIA‑100](../../ACESSILIA-100.md) para princípios de terminologia e auditabilidade. Em adição ao [WCAG 2.2](https://www.w3.org/TR/WCAG22/), [EPUB 3](https://www.w3.org/TR/epub-33/), **Manual de Padronização REBECA (Rede Brasileira de Estudos e Conteúdos Adaptados, 2025)**, **Nota Técnica nº 21/MEC/SECADI/DPEE (MECDAISY, 2012)** e o modelo de **Audiodescrição Didática - ADD (Vergara-Nunes, 2016)** para materiais e recursos pedagógicos acessíveis.
 
 ## 3. Diretrizes Principais
 
@@ -56,12 +56,36 @@ Conforme [ACESSILIA‑100](../../ACESSILIA-100.md) para princípios de terminolo
 }
 ```
 
-## 6. Exemplos de Conformidade
+## 6. Exemplos, Técnicas e Falhas Comuns
+
+### 6.1 Exemplos de Conformidade
 
 | Exemplo | Justificativa |
 |---------|-----------|
 | **Conforme** – “Apostila destinada ao ensino médio, abordando fundamentos de programação. Objetivo: identificar variáveis e escrever condicionais.” | Inclui contexto, público, nível e objetivos mensuráveis. |
 | **Não conforme** – “Material sobre programação.” `[viola ACL‑500‑EDU‑001, ACL‑500‑EDU‑002, ACL‑500‑EDU‑003, ACL‑500‑EDU‑004]` | Falta contexto educacional, objetivos e progressão. |
+
+### 6.2 Diretrizes de Audiodescrição Didática (ADD - Padrão REBECA / Vergara-Nunes)
+
+A descrição didática de elementos visuais pedagógicos **DEVE** apoiar-se no tripé metodológico:
+1. **Receptor**: Identificar quem é o estudante (curso, disciplina, etapa formativa e tipo de deficiência visual).
+2. **Contexto de Uso**: Delimitar com exatidão o que a atividade didática ou o docente visa ensinar com aquela figura, evitando sobrecarga cognitiva desnecessária.
+3. **Foco e Não Revelação de Resposta**: Descrever primeiramente a visão geral do elemento e, em exercícios avaliativos, **NÃO DEVE** fornecer a resposta ou conclusão que o estudante precisa deduzir.
+
+### 6.3 Catálogo de Técnicas Aplicáveis
+
+| Código | Técnica | Tipo | Aplicabilidade | Critérios Atendidos |
+|--------|---------|------|----------------|---------------------|
+| `T-500-01` | **Visão Geral Preliminar**: Iniciar a descrição didática contextualizando o tipo de diagrama ou imagem antes de descer aos detalhes anatômicos ou funcionais. | Suficiente | Todas as imagens didáticas | `ACL-500-EDU-001`, `ACL-500-EDU-003` |
+| `T-500-02` | **Verbos Cognitivos da Taxonomia de Bloom**: Formular metas de aprendizagem com verbos de ação mensuráveis (identificar, diferenciar, calcular, categorizar). | Suficiente | Metas e objetivos instrucionais | `ACL-500-EDU-002` |
+| `T-500-03` | **Sinalização Didática de Consulta Docente**: Quando a imagem exigir especialidade técnica além da capacidade do núcleo de acessibilidade, inserir a nota padronizada: `Nota do digitalizador: Procure o auxílio do professor para descrição da imagem`. | Recomendada | Conteúdo técnico complexo | `ACL-500-EDU-001` |
+
+### 6.4 Catálogo de Falhas Comuns
+
+| Código | Falha | Severidade | Violação | Exemplo de Falha |
+|--------|-------|------------|----------|-------------------|
+| `F-500-01` | **Revelação Prematura da Resposta**: Descrever o elemento indicando a solução da questão de múltipla escolha ou exercício. | Crítica | `ACL-500-EDU-001` | Dizer em um teste de botânica: "Figura mostrando a folha de bordo, que é a resposta correta". |
+| `F-500-02` | **Sobrecarga Cognitiva por Hiperdetalhamento**: Inserir detalhes irrelevantes para o objetivo de ensino que dispersam a atenção auditiva do estudante. | Alta | `ACL-500-EDU-003` | Descrever a cor da moldura ou arte gráfica em um problema de física de plano inclinado. |
 
 ## 7. Estratégia de Validação
 

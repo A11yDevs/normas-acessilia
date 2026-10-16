@@ -20,7 +20,7 @@ O conteúdo **DEVE** seguir os princípios e terminologia definidos em [ACESSILI
 | ACL‑200‑IMG‑004 | **Ordem espacial** | 100 % de referências de localização orientadas a esq→dir, cima→baixo. | Não misturar direções. |
 | ACL‑200‑IMG‑005 | **Privacidade** | 0 % de supressão de dados PII sem aviso. | Nunca omitir dados pessoais sem consentimento explícito. |
 | ACL‑200‑IMG‑006 | **Licenciamento** | 100 % de imagens com licença claramente identificada. | Incluir campo `license` no metadata. |
-| ACL‑200‑IMG‑007 | **Contraste** | Razão de luminância mínima de 4,5 :1 para elementos informativos. | Ver [WCAG 2.2](https://www.w3.org/TR/WCAG22/). |
+| ACL‑200‑IMG‑007 | **Contraste de Luminância** | Razão de luminância mínima de 4,5 :1 para elementos informativos. | Ver [WCAG 2.2](https://www.w3.org/TR/WCAG22/). |
 
 ## 4. Critérios Obrigatórios (ACL‑200‑IMG‑NNN)
 
@@ -58,12 +58,32 @@ O conteúdo **DEVE** seguir os princípios e terminologia definidos em [ACESSILI
 }
 ```
 
-## 6. Exemplos de Conformidade
+## 6. Exemplos, Técnicas e Falhas Comuns
+
+### 6.1 Exemplos de Conformidade
 
 | Exemplo | Justificativa |
 |---------|-----------|
 | **Conforme** – "Mesa de madeira com quatro cadeiras na sala de jantar, iluminada por lâmpada de teto, com foto de cromo e chapéu no gabinete." | Cumpre todas as diretrizes: observável, voz ativa, ordem espacial, privacidade. |
-| **Não conforme** – "Mesa com cadeiras." `[viola ACL‑200‑IMG‑001, ACL‑200‑IMG‑003]` | Falta de detalhes observáveis e ausência de verbos de ação. |
+| **Não conforme** – "Mesa elegante com cadeiras confortáveis, onde a família parece feliz esperando o jantar." `[viola ACL‑200‑IMG‑001, ACL‑200‑IMG‑002, ACL‑200‑IMG‑003]` | Juízo de valor ("elegante", "confortáveis"), inferência emocional ("parece feliz") e suposição não observável ("esperando o jantar"). |
+
+### 6.2 Catálogo de Técnicas Aplicáveis
+
+| Código | Técnica | Tipo | Aplicabilidade | Critérios Atendidos |
+|--------|---------|------|----------------|---------------------|
+| `T-200-01` | **Descrição Espacial Metódica**: Sequenciar objetos orientando-se estritamente da esquerda para a direita e de cima para baixo. | Suficiente | Fotografias e ilustrações | `ACL-200-IMG-001`, `ACL-200-IMG-004` |
+| `T-200-02` | **Verbos de Ação Observáveis**: Construir cada frase com verbo que denota ação ou estado visualmente identificável na voz ativa. | Suficiente | Todas as imagens estáticas | `ACL-200-IMG-001`, `ACL-200-IMG-003` |
+| `T-200-03` | **Registro Factual de Expressão Facial**: Descrever elementos anatômicos observáveis (ex.: "cantos da boca elevados", "olhos semicerrados") sem rotular emoções subjetivas. | Suficiente | Pessoas em foco | `ACL-200-IMG-002` |
+| `T-200-04` | **Sinalização Explícita de Incerteza**: Declarar limites visuais objetivos no campo `uncertainty` quando houver oclusão parcial. | Recomendada | Imagens ambíguas | `ACL-200-IMG-001`, `ACL-200-IMG-005` |
+
+### 6.3 Catálogo de Falhas Comuns
+
+| Código | Falha | Severidade | Violação | Exemplo de Falha |
+|--------|-------|------------|----------|-------------------|
+| `F-200-01` | **Inferência de Profissão ou Status**: Atribuir profissão ou condição social sem comprovação observável. | Crítica | `ACL-200-IMG-001` | Dizer "Médico examinando paciente" em vez de "Pessoa de jaleco branco com estetoscópio perante outra sentada". |
+| `F-200-02` | **Atribuição de Emoção sem Evidência**: Projetar sentimentos no sujeito retratado. | Crítica | `ACL-200-IMG-002` | Descrever "Pessoa triste olhando pela janela" quando apenas a cabeça inclinada para baixo é visível. |
+| `F-200-03` | **Uso de Adjetivos Avaliativos / Juízo de Valor**: Inserir opinião estética ou qualitativa pessoal. | Grave | `ACL-200-IMG-001` | Descrever objeto como "lindo", "luxuoso", "estranho" ou "agradável". |
+| `F-200-04` | **Supressão Oculta de Dados Pessoais**: Omitir dados PII sem documentar no metadata. | Crítica | `ACL-200-IMG-005` | Cortar rosto ou identificador de documento sem sinalizar `privacyNotice: true`. |
 
 ## 7. Estratégia de Validação
 
@@ -94,4 +114,4 @@ Esta família aplica‑se exclusivamente a imagens estáticas. Os seguintes tipo
 - **Conteúdo científico ou educacional** → usar [ACESSILIA‑400](../400/ACESSILIA‑400.md) ou [ACESSILIA‑500](../500/ACESSILIA‑500.md).
 - **Declaração de conformidade e perfis** → usar [ACESSILIA‑800](../800/ACESSILIA‑800.md).
 
-Formatos suportados: JPEG, PNG, SVG, GIF, TIFF, WebP. Formatos não listados **DEVEM** ser validados quanto à compatibilidade antes da aplicação.
+Formatos suportados: JPEG, PNG, SVG, GIF, TIFF, WebP. Formatos não listados **DEVEM** ser validados quanto à conformidade antes da aplicação.

@@ -49,12 +49,29 @@ Conforme [ACESSILIA‑100](../../ACESSILIA-100.md) para princípios de terminolo
 }
 ```
 
-## 6. Exemplos de Conformidade
+## 6. Exemplos, Técnicas e Falhas Comuns
+
+### 6.1 Exemplos de Conformidade
 
 | Exemplo | Justificativa |
 |---------|-----------|
 | **Conforme** – "Gráfico de barras que mostra a receita anual de 2017 a 2023; eixo X com anos, eixo Y com valores em reais; fonte: Estatística Federal; cor azul para receitas, verde para lucro." | Cumpre fonte, legendas, ordem lógica e contraste de cores. |
-| **Não conforme** – "Gráfico com barras coloridas." `[viola ACL‑300‑GRF‑001, ACL‑300‑GRF‑002, ACL‑300‑GRF‑005]` | Falta fonte de dados, legendas de eixos e significado das cores. |
+| **Não conforme** – "Gráfico com barras coloridas que mostra excelente desempenho financeiro." `[viola ACL‑300‑GRF‑001, ACL‑300‑GRF‑002, ACL‑300‑GRF‑003, ACL‑300‑GRF‑005]` | Falta fonte de dados, legendas de eixos, mapeamento de cores e insere inferência de tendência ("excelente desempenho") sem dados quantitativos. |
+
+### 6.2 Catálogo de Técnicas Aplicáveis
+
+| Código | Técnica | Tipo | Aplicabilidade | Critérios Atendidos |
+|--------|---------|------|----------------|---------------------|
+| `T-300-01` | **Mapeamento Textual de Cores**: Descrever o papel semântico de cada cor independentemente da percepção cromática. | Suficiente | Gráficos e diagramas coloridos | `ACL-300-GRF-005` |
+| `T-300-02` | **Declaração Numérica dos Eixos**: Especificar título, escala e unidades de medida para todos os eixos representados. | Suficiente | Gráficos de linhas, barras e dispersão | `ACL-300-GRF-002` |
+| `T-300-03` | **Descrição Estrutural Tabular Equivalente**: Apresentar os dados de apoio em estrutura lógica de matriz de linhas e colunas. | Recomendada | Tabelas e gráficos densos | `ACL-300-GRF-003`, `ACL-300-GRF-004` |
+
+### 6.3 Catálogo de Falhas Comuns
+
+| Código | Falha | Severidade | Violação | Exemplo de Falha |
+|--------|-------|------------|----------|-------------------|
+| `F-300-01` | **Omissão da Fonte de Dados**: Publicar descrição de gráfico sem apontar de onde os dados derivam. | Crítica | `ACL-300-GRF-001` | Não indicar autor ou órgão emissor dos dados. |
+| `F-300-02` | **Inferência de Causa ou Sucesso**: Concluir causalidade não explicada pelos números. | Alta | `ACL-300-GRF-003` | Afirmar "vendas caíram devido à crise" sem que a crise esteja documentada no gráfico. |
 
 ## 7. Estratégia de Validação
 

@@ -33,26 +33,32 @@
 | 500 | `ACL‑500‑EDU‑NNN` | `ACL‑500‑EDU‑001` |
 | 600 | `ACL‑600‑MDM‑NNN` | `ACL‑600‑MDM‑001` |
 | 700 | `ACL‑700‑VAL‑NNN` | `ACL‑700‑VAL‑001` |
-| 800 | `ACL‑800‑PRF‑NNN` | `ACL‑800‑PRF‑001` |
+| 800 (Critérios) | `ACL‑800‑CRT‑NNN` | `ACL‑800‑CRT‑001` |
+| 800 (Perfis) | `ACL‑800‑PRF‑NNN` | `ACL‑800‑PRF‑001` |
 
 ## Infraestrutura
 
 | Recurso | Descrição | Caminho |
 |---------|-----------|---------|
-| **Schema JSON** | Validação de metadados (draft‑07) | [schemas/acessilia.schema.json](schemas/acessilia.schema.json) |
+| **Schema JSON** | Validação de metadata (draft‑07) | [schemas/acessilia.schema.json](schemas/acessilia.schema.json) |
 | **Manifesto** | Catálogo de famílias e ordem de importação | [manifest.yml](manifest.yml) |
 | **Lint Script (PS)** | Script de validação PowerShell | [scripts/lint_demo.ps1](scripts/lint_demo.ps1) |
 | **Lint Script (Bash)** | Script de validação Bash | [scripts/lint_demo.sh](scripts/lint_demo.sh) |
 
 ## Conformidade Externa
 
-| Padrão | Escopo | Família(s) APLICÁVEL(is) |
+| Padrão | Escopo | Família(s) Aplicável(is) |
 |--------|--------|--------------------------|
-| [WCAG 2.2](https://www.w3.org/TR/WCAG22/) | Acessibilidade web | 200, 300, 400, 500, 600 |
-| [EPUB 3](https://www.w3.org/TR/epub-33/) | Publicações acessíveis | 200, 300, 400, 500, 600 |
-| [PDF/UA-1](https://www.iso.org/standard/64599.html) | Documentos PDF acessíveis | 200, 300, 400, 500 |
-| [EN 301 549 v3.2.1](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf) | Requisitos europeus | Todas |
+| [WCAG 2.2](https://www.w3.org/TR/WCAG22/) | Acessibilidade de conteúdo Web (W3C) | 200, 300, 400, 500, 600 |
+| [WAI-ARIA 1.2](https://www.w3.org/TR/wai-aria-1.2/) | Semântica de acessibilidade de aplicações ricas | 200, 300, 600 |
+| [HTML-AAM / Core-AAM](https://www.w3.org/TR/html-aam-1.0/) | Acessibilidade e mapeamento estrutural | 200, 300 |
+| [EPUB 3](https://www.w3.org/TR/epub-33/) / [EPUB A11y 1.1](https://www.w3.org/TR/epub-a11y-11/) | Publicações digitais acessíveis | 200, 300, 400, 500, 800 |
+| [PDF/UA-1 (ISO 14289)](https://www.iso.org/standard/64599.html) | Documentos PDF acessíveis | 200, 300, 400, 500, 800 |
+| [EN 301 549 v3.2.1](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf) | Requisitos europeus de TIC | Todas |
 | [Section 508](https://www.section508.gov/) | Acessibilidade governamental (EUA) | Todas |
+| [ISO 9241-171](https://www.iso.org/standard/39080.html) | Ergonomia da interação humano-sistema | 200, 300, 700 |
+| [DAISY 3](https://daisy.org/) | Informação acessível e áudio estruturado | 600, 800 |
+| [ADLAB PRO](https://www.adlabproject.eu/) | Diretrizes de audiodescrição | 600 |
 
 ## Fluxo de Revisão
 
